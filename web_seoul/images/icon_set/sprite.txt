@@ -1,0 +1,60 @@
+Padding between elements (px):
+10
+Align elements:Left-right
+
+x
+.bg-shorcut_icon_set_05 {
+    width: 84px; height: 91px;
+    background: url('css_sprites.png') -10px -10px;
+}
+
+x
+.bg-shorcut_icon_set_07 {
+    width: 84px; height: 91px;
+    background: url('css_sprites.png') -114px -10px;
+}
+
+x
+.bg-shorcut_icon_set_09 {
+    width: 84px; height: 91px;
+    background: url('css_sprites.png') -218px -10px;
+}
+
+x
+.bg-shorcut_icon_set_11 {
+    width: 84px; height: 91px;
+    background: url('css_sprites.png') -322px -10px;
+}
+
+x
+.bg-shorcut_icon_set_13 {
+    width: 84px; height: 91px;
+    background: url('css_sprites.png') -426px -10px;
+}
+
+x
+.bg-shorcut_icon_set_15 {
+    width: 84px; height: 91px;
+    background: url('css_sprites.png') -530px -10px;
+}
+
+x
+.bg-shorcut_icon_set_01 {
+    width: 84px; height: 91px;
+    background: url('css_sprites.png') -634px -10px;
+}
+
+x
+.bg-shorcut_icon_set_03 {
+    width: 84px; height: 91px;
+    background: url('css_sprites.png') -738px -10px;
+}
+Drag & Drop files here or select them using:
+
+CHOOSE FILES
+DOWNLOAD
+Inspired by Stoyan - Designed by Chris Coyier
+
+Recommended Toptal CSS Resources
+Hire a CSS ExpertCSS Cheat SheetCSS Best PracticesSee all Toptal CSS resources
+Hire the top 3% of freelance talent¨Ï Copyright 2010 - 2021 Toptal, LLC

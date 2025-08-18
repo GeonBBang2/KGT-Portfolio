@@ -1,0 +1,47 @@
+@media screen and (max-width:1024px) {
+    .about_wrap .no_bg {
+        padding: 130px 0 0 100px;
+    }
+}
+@media screen and (max-width:580px) {
+    .about_wrap .default_bg .default_filter,
+    .about_wrap .adress_bg .adress_filter ,
+    .about_wrap .about_bg .about_filter {
+        height: 400px;
+    }
+    .about_wrap .default_bg .default_txt{
+        top: 160px;
+        padding: 0 16px;
+    }
+    .about_wrap .about_bg .about_txt {
+        top: 50px;
+        padding: 0 16px;
+    }
+    .about_wrap .about_bg .about_txt h1 {
+        margin-bottom: 50px;
+        font-size: 3.5rem;
+    }
+    .about_wrap .about_bg .about_txt p span {
+        font-size: 1.85rem;
+    }
+    .about_wrap .about_bg .about_txt p {
+        font-size: 1rem;
+    }
+    .about_wrap .no_bg {
+        padding: 0 16px;
+        align-items: center;
+    }
+    .about_wrap .no_bg a {
+        margin: 0;
+    }
+    .about_wrap .adress_bg .adress_container {
+        top: 120px;
+        padding: 0 16px;
+        margin-left: 0;
+    }
+    .scroll {
+        position: absolute;
+        bottom: 50px;
+        transform: scale(80%);
+    }
+}

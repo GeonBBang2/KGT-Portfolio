@@ -1,0 +1,32 @@
+main {width: 1000px; margin: 0 auto;}
+main #contact_wrap {margin-top: 50px;}
+/* contact_left */
+main #contact_wrap h2 {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ddd;
+}
+/* contact_right */
+main #contact_wrap .contact {
+    margin-top: 50px;
+    display: flex; 
+    flex-flow: row nowrap;
+}
+main #contact_wrap .contact .info {
+    width: 30%;
+    margin-right: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+main #contact_wrap .contact .info p {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-family: 'Kanit';
+}
+main #contact_wrap .contact .info p:last-child {
+    margin: 0;
+}
+
+main #contact_wrap .contact #map {
+    width: calc(100% - 30%); height: 400px;
+    background-color: #999;
+}

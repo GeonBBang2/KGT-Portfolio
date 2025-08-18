@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카히스토리</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <script>
+        window.onload=function(){
+            //카히스토리영상 변수
+            //카히스토리영상 제목변수
+            const r4_tab_title1 = document.querySelector('#r4 .tab_title a:first-child')
+            const r4_tab_title2 = document.querySelector('#r4 .tab_title a:last-child')
+            //자주사용하는 메뉴 제목 변수
+            const r5_tab_title1 = document.querySelector('#r5 .tab_title a:nth-child(1)')
+            const r5_tab_title2 = document.querySelector('#r5 .tab_title a:nth-child(2)')
+            const r5_tab_title3 = document.querySelector('#r5 .tab_title a:nth-child(3)')
+            const r5_tab_title4 = document.querySelector('#r5 .tab_title a:nth-child(4)')
+            //자주사용하는 메뉴 내용 변수
+            const r5_tab_c1 = document.querySelector('#r5 .tab1_c')
+            const r5_tab_c2 = document.querySelector('#r5 .tab2_c')
+            const r5_tab_c3 = document.querySelector('#r5 .tab3_c')
+            const r5_tab_c4 = document.querySelector('#r5 .tab4_c')
+
+            console.log(
+                r5_tab_title1, r5_tab_title2, r5_tab_title3, r5_tab_title4,
+                r5_tab_c1, r5_tab_c2, r5_tab_c3 , r5_tab_c4
+                )
+
+            //카히스토리영상 내용변수
+            const r4_tab_c1 = document.querySelector('#r4 .tab1_c')
+            const r4_tab_c2 = document.querySelector('#r4 .tab2_c')
+            console.log(r4_tab_title1 ,r4_tab_title2);
+            console.log(r4_tab_c1, r4_tab_c2);
+
+            //카히스토리영상 초기 사용방법 내용 숨기기
+            r4_tab_c2.style.display = 'none'
+            //자주 사용하는 메뉴 비활성화 내용 숨기기
+            r5_tab_c2.style.display = 'none'
+            r5_tab_c3.style.display = 'none'
+            r5_tab_c4.style.display = 'none'
+            //자주 사용하는 메뉴 제목 클릭 시 활성화 내용 보이기
+            r5_tab_title1.addEventListener('click',function(e){
+                e.preventDefault()
+                //내용 활성화/비활성화
+                r5_tab_c1.style.display = 'flex'
+                r5_tab_c2.style.display = 'none'
+                r5_tab_c3.style.display = 'none'
+                r5_tab_c4.style.display = 'none'
+                //제목 active 활성화/비활성화
+                r5_tab_title1.classList.add('active')
+                r5_tab_title2.classList.remove('active')
+                r5_tab_title3.classList.remove('active')
+                r5_tab_title4.classList.remove('active')
+                
+            })
+            r5_tab_title2.addEventListener('click',function(e){
+                e.preventDefault()
+                //내용 활성화/비활성화
+                r5_tab_c1.style.display = 'none'
+                r5_tab_c2.style.display = 'flex'
+                r5_tab_c3.style.display = 'none'
+                r5_tab_c4.style.display = 'none'
+                //제목 active 활성화/비활성화
+                r5_tab_title1.classList.remove('active')
+                r5_tab_title2.classList.add('active')
+                r5_tab_title3.classList.remove('active')
+                r5_tab_title4.classList.remove('active')
+            })
+            r5_tab_title3.addEventListener('click',function(e){
+                e.preventDefault()
+                //내용 활성화/비활성화
+                r5_tab_c1.style.display = 'none'
+                r5_tab_c2.style.display = 'none'
+                r5_tab_c3.style.display = 'flex'
+                r5_tab_c4.style.display = 'none'
+                //제목 active 활성화/비활성화
+                r5_tab_title1.classList.remove('active')
+                r5_tab_title2.classList.remove('active')
+                r5_tab_title3.classList.add('active')
+                r5_tab_title4.classList.remove('active')
+            })
+            r5_tab_title4.addEventListener('click',function(e){
+                e.preventDefault()
+                //내용 활성화/비활성화
+                r5_tab_c1.style.display = 'none'
+                r5_tab_c2.style.display = 'none'
+                r5_tab_c3.style.display = 'none'
+                r5_tab_c4.style.display = 'flex'
+                //제목 active 활성화/비활성화
+                r5_tab_title1.classList.remove('active')
+                r5_tab_title2.classList.remove('active')
+                r5_tab_title3.classList.remove('active')
+                r5_tab_title4.classList.add('active')
+            })
+
+
+
+            r4_tab_title2.addEventListener('click',function(e){
+                e.preventDefault()//a herf 기능 막기
+                console.log('click');
+                //카히스토리영상 안내 내용 숨기기
+                r4_tab_c1.style.display = 'none'
+                //카히스토리영상 사용방법 내용 보이기
+                r4_tab_c2.style.display = 'block'
+                r4_tab_title2.classList.add('active')
+                r4_tab_title1.classList.remove('active')
+            })
+            //카히스토리영상 안내 제목 클릭했을 때
+            r4_tab_title1.addEventListener('click',function(e){
+                e.preventDefault()
+                r4_tab_c1.style.display = 'block'
+                r4_tab_c2.style.display = 'none'
+                r4_tab_title2.classList.remove('active')
+                r4_tab_title1.classList.add('active')
+            })
+        }//window.onload
+    </script>
+</head>
+<body>
+    <div id="h_bg">
+        <header>
+            <h1><a href="#"><img src="images/logo.png" alt="카히스토리"></a></h1>
+            <div class="h_right">
+                <a href="#">충전회원</a>
+                <a href="#">보험개발원</a>
+                <a href="#">LANG</a>
+                <a href="#" class="search"><img src="images/search.svg" alt="검색"></a>
+                <a href="#" class="all_menu"><img src="images/allMenu.png" alt=""><span>전체메뉴</span></a>
+            </div><!-- h_right -->
+        </header>
+    </div><!-- h_bg -->
+    <main>
+        <div id="r1_bg">
+            <div id="r1">
+                <h1>
+                    중고차 매장가서 보기 전에<br>
+                    <span>카히스토리 확인하세요</span>
+                </h1>
+                <div class="view_category">
+                    <a href="#" class="active">사고이력조회</a>
+                    <a href="#">무료침수차량조회</a>
+                    <a href="#">무료폐차사고조회</a>
+                    <a href="#">자동차보험료조회</a>
+                </div><!-- view_category -->
+                <div class="view_group">
+                    <div class="view_contents1">
+                        <form action="#" method="post" id="view_frm" >
+                            <fieldset>
+                                <legend class="skip">차량번호조회양식</legend>
+                                <select name="car_num" id="car_num">
+                                    <option value="">차량번호</option>
+                                </select>
+                                <input type="text" name="car_num_txt" placeholder="띄어쓰기 없이 차량번호를 입력하세요 (12가 1234)">
+                                <button id="view_btn" type="submit">조회하기</button>
+                            </fieldset>
+                        </form><!-- view_contents1_top -->
+                        <div class="btm_list">
+                            <div class="btm_menu">
+                                <a href="#">차대번호란?</a>
+                                <a href="#">무료침수차량조회</a>
+                                <a href="#">무료폐차사고조회</a>
+                                <a href="#">카히스토리</a>
+                            </div><!-- btm_menu -->
+                            <a href="#" class="sample_view">샘플 보고서 보기</a>
+                        </div><!-- btm_list -->
+                    </div><!-- view_contents1 -->
+                    <div class="view_contents2"></div><!-- view_contents2 -->
+                    <div class="view_contents3"></div><!-- view_contents3 -->
+                    <div class="view_contents4"></div><!-- view_contents4 -->
+                </div><!-- view_group -->
+            </div><!-- r1 -->
+        </div><!-- r1_bg -->
+        <div id="r2_bg">
+            <div id="r2">
+                <div class="title">
+                    <p class="sub_title">DATA</p>
+                    <h1>이번달 카히스토리 요약 데이터</h1>
+                    <p class="con">카히스토리는 국내 최고의 차량 정보 조회서비스이며, 신뢰할 수 있는 중고차 데이터를 제공합니다.</p>
+                </div><!-- title -->
+                <ul class="contents">
+                    <li>
+                        <p><img src="images/info-search.png" alt=""></p>
+                        <h2>보험 사고 정보 보유 건수</h2>
+                        <p class="num"><em>93,491,840</em>건</p>
+                    </li>
+                    <li>
+                        <p><img src="images/crash-price.png" alt=""></p>
+                        <h2>특수 사고 정보 집적 건수</h2>
+                        <p class="num"><em>1,439,446</em>건</p>
+                    </li>
+                    <li>
+                        <p><img src="images/crash-count.png" alt=""></p>
+                        <h2>이 달의 방문자 수</h2>
+                        <p class="num"><em>92,886</em>명</p>
+                    </li>
+                    <li>
+                        <p><img src="images/water-damage.png" alt=""></p>
+                        <h2>어제 조회된 최대 피해 차량</h2>
+                        <p class="num"><em>208,867,460</em>원<br><span>(12거 14**)</span></p>
+                    </li>
+                </ul><!-- contents -->
+            </div><!--r2  -->
+        </div><!-- r2_bg -->
+        <div id="r3_bg">
+            <div id="r3">
+                <div class="title">
+                    <p class="sub_title">BANNER</p>
+                    <h1>바로가기</h1>
+                </div><!-- title -->
+                <ul class="contents">
+                    <li>
+                        <div class="left">
+                            <img src="images/banner1.png" alt="온라인 보험 슈퍼마켓 보험다모아">
+                            <a href="#" class="link">바로가기</a>
+                        </div>
+                        <p>온라인 보험상품을 한눈에 비교하여 현명한 보험상품을 선택하세요.</p>
+                    </li>
+                    <li>
+                        <div class="left">
+                            <img src="images/banner2.png" alt="Norton Secured">
+                            <a href="#" class="link">바로가기</a>
+                        </div>
+                        <p>11년 보험회사를 대상으로 가입가능한 자동차보험회사를 연결해드립니다.</p>
+                    </li>
+                    <li>
+                        <div class="left">
+                            <img src="images/banner3.png" alt="My car">
+                            <a href="#" class="link">바로가기</a>
+                        </div>
+                        <p>보험개발원은 보험소비자 보호와 보험산업 발전을 위한 다양한 서비스를 제공하고 있습니다.</p>
+                    </li>
+                </ul><!-- contents -->
+            </div><!--r3  -->
+        </div><!-- r3_bg -->
+        <div id="r4_bg">
+            <div id="r4">
+                <div class="title">
+                    <p class="sub_title">VIDEO</p>
+                    <h1>카히스토리 영상</h1>
+                    <p class="con">영상을 통해 카히스토리 사용방법 등 자세한 정보를 확인해보세요.</p>
+                </div><!-- title -->
+                <div class="contents">
+                    <!-- 탭 제목(안내/사용방법) -->
+                    <div class="tab_title">
+                        <a href="#" class="active">안내</a>
+                        <a href="#">사용방법</a>
+                    </div>
+                    <!-- 탭 클릭 시 출력 내용(안내/사용방법) -->
+                    <div class="tab_contents">
+                        <div class="tab1_c active">
+                            <video src="video/carhistory.mp4" autoplay muted controls loop></video>
+                            <p><img src="images/video.png" alt=""></p>
+                        </div><!-- tab1_c active -->
+                        <div class="tab2_c">
+                            <p>사용방법 내용</p>
+                        </div>
+                    </div>
+                </div><!-- contents -->
+            </div><!-- r4 -->
+        </div><!-- r4_bg -->
+        <div id="r5_bg">
+            <div id="r5">
+                <div class="title">
+                    <p class="sub_title">MENU</p>
+                    <h1>자주 사용하는 메뉴 </h1>
+                    <p class="con">자주 사용하는 메뉴로 카히스토리를 보다 편리하게 이용하세요.</p>
+                </div><!-- title -->
+                <div class="contents">
+                    <div class="tab_title">
+                        <a href="#" class="active">사고이력조회</a>
+                        <a href="#">정보이용료</a>
+                        <a href="#">조회방법</a>
+                        <a href="#">용어설명</a>
+                    </div><!-- tab_title -->
+                    <!-- 탭 클릭 시 출력 내용 -->
+                    <div class="tab_contents">
+                        <div class="tab1_c">
+                            <div class="info">
+                                <h2>사고이력 조회 &gt;</h2>
+                            <p><img src="images/car-new.png" alt=""></p>
+                            <dl>
+                                <dt>관련메뉴</dt>
+                                <dd>조회가 원활하게 안되시나요?
+                                    <a href="#">고객문의 바로가기 &gt</a>
+                                </dd>
+                            </dl>
+                            </div>
+                            <div class="essential">
+                                <h2>왜 사고이력조회가 필수인가?</h2>
+                                <ul>
+                                    <li>
+                                        <!-- background-image -->
+                                        <p class="number">01</p>
+                                        <p><em>평균 사고건수 2.93건</em>(2016년 카히스토리 조회 차량 기준)</p>
+                                    </li>
+                                    <li>
+                                        <!-- background-image -->
+                                        <p class="number">02</p>
+                                        <p><em>운전자의 안전을 위협하는 침수, 전손확인</em></p>
+                                    </li>
+                                    <li>
+                                        <!-- background-image -->
+                                        <p class="number">03</p>
+                                        <p><em>허위 매물 방지</em></p>
+                                    </li>
+                                </ul>
+                            </div><!-- essential -->
+                        </div><!-- tab1_c -->
+                        
+                        <div class="tab2_c">
+                            <p>정보이용료 내용</p>
+                        </div><!-- tab2_c -->
+                        <div class="tab3_c">
+                            <p>조회방법 내용</p>
+                        </div><!-- tab3_c -->
+                        <div class="tab4_c">
+                            <p>용어설명 내용</p>
+                        </div><!-- tab4_c -->
+                    </div><!--tab_contents  -->
+                </div><!-- contents -->
+            </div><!-- r5 -->
+        </div><!-- r5_bg --> 
+        <div id="r6_bg">
+            <div id="r6">
+                <div class="title">
+                    <p class="sub_title">MENU</p>
+                    <h1>자주 사용하는 메뉴 </h1>
+                    <p class="con">자주 사용하는 메뉴로 카히스토리를 보다 편리하게 이용하세요.</p>
+                </div><!-- title -->
+                <div class="contents">
+                    <ul>
+                        <li>
+                            <h2>보험처리 시 부품 이름이</h2>
+                            <div class="user">
+                                <p class="name">이경현님</p>
+                                <p class="day">2019년 09월 01일</p>
+                            </div>
+                            <p class="txt">보험처리 시 부품이름을 조회할 수 있으면 어디서</p>
+                            <div class="number">
+                                <p class="num">평점 <span>4</span>/5</p>
+                                <a href="#">더보기 &gt;</a>
+                            </div>
+                        </li>
+                        <li>
+                            <h2>보험처리 시 부품 이름이</h2>
+                            <div class="user">
+                                <p class="name">이경현님</p>
+                                <p class="day">2019년 09월 01일</p>
+                            </div>
+                            <p class="txt">보험처리 시 부품이름을 조회할 수 있으면 어디서</p>
+                            <div class="number">
+                                <p class="num">평점 <span>4</span>/5</p>
+                                <a href="#">더보기 &gt;</a>
+                            </div>
+                        </li>
+                        <li>
+                            <h2>보험처리 시 부품 이름이</h2>
+                            <div class="user">
+                                <p class="name">이경현님</p>
+                                <p class="day">2019년 09월 01일</p>
+                            </div>
+                            <p class="txt">보험처리 시 부품이름을 조회할 수 있으면 어디서</p>
+                            <div class="number">
+                                <p class="num">평점 <span>4</span>/5</p>
+                                <a href="#">더보기 &gt;</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="all_more">모두보기</a>
+                </div>
+            </div><!-- r6 -->
+        </div><!-- r6_bg -->
+    </main>
+    <div id="f_bg">
+        <footer>
+            <div class="f_top">
+                <div class="f_t_left">
+                    <a href="#">카히스토리</a>
+                    <a href="#">사고이력조회</a>
+                    <a href="#">고객센터</a>
+                    <a href="#">사이트맵</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">정보책임의 한계</a>
+                    <a href="#">개인정보취급방침</a>
+                </div><!-- f_t_left -->
+                <div class="f_t_right">
+                    <select name="lang" id="lang">
+                        <option value="kr">한국어</option>
+                    </select>
+                </div><!-- f_t_right -->
+            </div><!-- f_top -->
+            <div class="f_btm">
+                <div class="logo_copy">
+                    <p><img src="images/foot-logo.png" alt="carhistory"></p>
+                    <p>
+                        사업자등록번호 116-82-03536 통신판매업 제19-930호 보험개발원 대표: 강호
+                        (150-606) 서울특별시 영등포구 국제금융로6길 38
+                        민원처리시간(월~금) 09:30~17:30까지입니다. 시간외 문의는 고객문의를 이용바랍니다.
+                        T: 02)368-4300 / F : 02)368-4095 <br>
+                        COPYRIGHT © BY CARHISTORY. ALL RIGHTS RESERVED.
+                    </p>
+                </div><!-- logo_copy -->
+                <div class="banner">
+                    <a href="#"><img src="images/banner4.png" alt="보험개발원"></a>
+                    <a href="#"><img src="images/banner2.png" alt="Norton secured"></a>
+                </div><!-- banner -->
+            </div><!-- f_btm -->
+        </footer>
+    </div><!-- f_bg -->
+</body>
+</html>

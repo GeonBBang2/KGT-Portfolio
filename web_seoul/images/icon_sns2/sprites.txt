@@ -1,0 +1,95 @@
+10
+Align elements:Left-right
+
+x
+.bg-icon_set_sns_04 {
+    width: 25px; height: 25px;
+    background: url('css_sprites.png') -10px -10px;
+}
+
+x
+.bg-icon_set_sns_05 {
+    width: 25px; height: 25px;
+    background: url('css_sprites.png') -55px -10px;
+}
+
+x
+.bg-icon_set_sns_06 {
+    width: 25px; height: 25px;
+    background: url('css_sprites.png') -100px -10px;
+}
+
+x
+.bg-icon_set_sns_07 {
+    width: 25px; height: 25px;
+    background: url('css_sprites.png') -145px -10px;
+}
+
+x
+.bg-icon_set_sns_01 {
+    width: 25px; height: 25px;
+    background: url('css_sprites.png') -190px -10px;
+}
+
+x
+.bg-icon_set_sns_02 {
+    width: 25px; height: 25px;
+    background: url('css_sprites.png') -235px -10px;
+}
+
+x
+.bg-icon_set_sns_03 {
+    width: 25px; height: 25px;
+    background: url('css_sprites.png') -280px -10px;
+}
+
+x
+.bg-icon_set_sns_10 {
+    width: 25px; height: 25px;
+    background: url('css_sprites.png') -325px -10px;
+}
+
+x
+.bg-icon_set_sns_11 {
+    width: 25px; height: 25px;
+    background: url('css_sprites.png') -370px -10px;
+}
+
+x
+.bg-icon_set_sns_12 {
+    width: 25px; height: 25px;
+    background: url('css_sprites.png') -415px -10px;
+}
+
+x
+.bg-icon_set_sns_13 {
+    width: 25px; height: 25px;
+    background: url('css_sprites.png') -460px -10px;
+}
+
+x
+.bg-icon_set_sns_14 {
+    width: 25px; height: 25px;
+    background: url('css_sprites.png') -505px -10px;
+}
+
+x
+.bg-icon_set_sns_08 {
+    width: 25px; height: 25px;
+    background: url('css_sprites.png') -550px -10px;
+}
+
+x
+.bg-icon_set_sns_09 {
+    width: 25px; height: 25px;
+    background: url('css_sprites.png') -595px -10px;
+}
+Drag & Drop files here or select them using:
+
+CHOOSE FILES
+DOWNLOAD
+Inspired by Stoyan - Designed by Chris Coyier
+
+Recommended Toptal CSS Resources
+Hire a CSS ExpertCSS Cheat SheetCSS Best PracticesSee all Toptal CSS resources
+Hire the top 3% of freelance talent© Copyright 2010 - 2021 Toptal, LLC

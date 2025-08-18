@@ -1,0 +1,13 @@
+@media screen and (max-width:800px) {
+    main .collection_wrap .c_row1, 
+    main .collection_wrap .c_row2,
+    main .collection_wrap .c_row3,
+    main .collection_wrap .c_row4 {
+        flex-flow: column nowrap;
+        margin-bottom: 0;
+    }
+    main .collection_wrap .collection {
+        width: calc(100% - 32px);
+        margin-bottom: 60px;
+    }
+}

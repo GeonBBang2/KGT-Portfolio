@@ -1,0 +1,93 @@
+    <!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>포트폴리오 예제</title>
+        <style>
+            body {
+                background: #f1f1f1;
+            }
+            .device {
+                position: relative;
+                width: 480px; height: 896px; /* 모바일 디바이스 크기(초기값) */
+                margin: 100px auto 0;
+                border: 16px black solid;
+                border-top-width: 60px;
+                border-bottom-width: 60px;
+                border-radius: 36px;
+                transition:all 0.5s; /* 기기 변경시 애니메이션 */
+            }
+
+            .device:before {/* 상단 스피커 */
+                content: ''; display: block; width: 60px; height: 5px;
+                position: absolute; top: -30px; left: 50%;
+                transform: translate(-50%, -50%);
+                background: #333; border-radius: 10px;
+            }
+            .device:after {/* 모바일 하단 버튼 */
+                content: '';display: block;
+                width: 35px;height: 35px;
+                position: absolute;left: 50%;bottom: -65px;
+                transform: translate(-50%, -50%);
+                background: #333;border-radius: 50%;
+            }
+            .device .content {
+                width: 100%;height: 100%;
+                background: white; margin: -1px;
+            }
+            .top {
+                position:fixed; left:0; top:0; 
+                width:100%; background:#222; height:80px; 
+                text-align:center;
+            }
+            .top a {
+                color:#fff; padding-top:15px; text-decoration:none; 
+                display:inline-block; width:50px;
+            }
+            .top a img {width:100%; filter:invert(100%)}/* 원본 검은색/필터로 색상조정 */
+            .top a:hover img {width:100%; filter:invert(50%)}
+        </style>
+        <script>
+            window.onload=function(){
+                
+                const top = document.querySelectorAll('.top a')
+                const device = document.querySelector('.device')
+                console.log(top)
+                console.log(device)
+                //mobile 480 x 896
+                //tablet 768 x 1024
+                //desktop 1400 x 1024
+                top[1].addEventListener('click',function(e){
+                    e.preventDefault()
+                    device.style.width = '768px'
+                    device.style.height = '1024px'
+                })
+                top[0].addEventListener('click',function(e){
+                    e.preventDefault()
+                    device.style.width = '480px'
+                    device.style.height = '896px'
+                })
+                top[2].addEventListener('click',function(e){
+                    e.preventDefault()
+                    device.style.width = '1400px'
+                    device.style.height = '1024px'
+                })
+
+            }//onload end
+        </script>
+    </head>
+    <body>
+        <div class="top">
+            <a href="#"><img src="images/mobile.png" alt="모바일 보기"></a>
+            <a href="#"><img src="images/tablet.png" alt="태블릿 보기"></a>
+            <a href="#"><img src="images/computer.png" alt="데스크탑 보기"></a>
+        </div>
+        <div class="device">
+            <div class="content">
+                <iframe src="../index.html" style="width:100%;border:none;height:100%" />
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고양이 보호소</title>
+    <!-- 파비콘 -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <!-- 디자인css -->
+    <link rel="stylesheet" href="styles/reset.css"><!-- 1 reset -->
+    <link rel="stylesheet" href="styles/style.css"><!-- 2 Desktop css -->
+    <!-- <link rel="stylesheet" href="styles/responsive.css">3 tablet, -->
+    <link rel="stylesheet" href="styles/responsive.css"><!-- 3 tablet, -->
+    <!-- <link rel="stylesheet" href="styles/test.css"> -->
+</head>
+<body>
+    <div id="h_bg">
+        <header>
+            <h1><a href="#"><img src="images/logo.svg" alt="catch"></a></h1>
+            <nav><!-- Desktop, Tablet -->
+                <a href="#">캣치?</a>
+                <a href="#">입양문의</a>
+                <a href="#">보호소오늘길</a>
+                <a href="#">초보집사 도움말</a>
+                <a href="#">행사/이벤트</a>
+            </nav>
+            <!-- mobile 반응형 웹시 보이는 네비게이션 -->
+            <a href="#" id="m_menu"><img src="images/menu.png" alt="메뉴"></a>
+            <div id="m_nav">
+                <a href="#">캣치?</a>
+                <a href="#">입양문의</a>
+                <a href="#">보호소오늘길</a>
+                <a href="#">초보집사 도움말</a>
+                <a href="#">행사/이벤트</a>
+            </div>
+        </header>
+    </div><!-- e:h_bg -->
+    <main>
+        <div id="slide_wrap">
+            <!-- 1.slide img -->
+            <div id="slide_bnr">
+                <p><img src="images/main_banner.jpg" alt="배너1"></p>
+                <p class="active"><img src="images/main_banner.jpg" alt="배너2"></p>
+                <p><img src="images/main_banner.jpg" alt="배너3"></p>
+                <p><img src="images/main_banner.jpg" alt="배너4"></p>
+                <p><img src="images/main_banner.jpg" alt="배너5"></p>
+                <p><img src="images/main_banner.jpg" alt="배너6"></p>
+            </div>
+            <!-- 2.slide controls prev next -->
+            <a href="#" class="prev"><img src="images/icon_prev.png" alt="이전"></a>
+            <a href="#" class="next"><img src="images/icon_next.png" alt="다음"></a>
+            <!-- 3.slide indicator(pagenation) -->
+            <div class="indicator">
+                <a href="#">배너1보기</a>
+                <a class="active" href="#">배너2보기</a>
+                <a href="#">배너3보기</a>
+                <a href="#">배너4보기</a>
+                <a href="#">배너5보기</a>
+                <a href="#">배너6보기</a>
+            </div>
+        </div><!-- e:slide_wrap -->
+        <div id="gallery">
+            <a href="#" title="갤러리1보기"><img src="images/gallery/gallery1.png" alt=""></a>
+            <a href="#" title="갤러리2보기"><img src="images/gallery/gallery2.png" alt=""></a>
+            <a href="#" title="갤러리3보기"><img src="images/gallery/gallery3.png" alt=""></a>
+            <a href="#" title="갤러리4보기"><img src="images/gallery/gallery4.png" alt=""></a>
+            <a href="#" title="갤러리5보기" class="active"><img src="images/gallery/gallery5.png" alt=""></a>
+            <a href="#" title="갤러리6보기"><img src="images/gallery/gallery6.png" alt=""></a>
+            <a href="#" title="갤러리7보기"><img src="images/gallery/gallery7.png" alt=""></a>
+            <a href="#" title="갤러리8보기"><img src="images/gallery/gallery8.png" alt=""></a>
+            <a href="#" title="갤러리9보기"><img src="images/gallery/gallery9.png" alt=""></a>
+        </div><!-- e:gallery -->
+        <div id="campain_bg">
+            <div id="campain_txt">
+                <span>사지말고 <em>입양하세요</em></span>
+                <span>고양이라서 다행이야 입양 보호소</span>
+            </div><!-- e:campain_txt -->
+        </div><!-- e:campain_bg -->
+        <div id="card_wrap">
+            <div class="card">
+                <p class="photo"><img src="images/card/card1.png" alt=""></p>
+                <h2>입양카드</h2>
+                <div class="contents">
+                    <p>나이:2살</p>
+                    <p>품종 : 코리안 숏헤어</p>
+                    <p>특징 : 애교쟁이</p>
+                    <p>사랑스러운 애기 입양하실 집사님을 기다려요~ 입양 문의주세요</p>
+                </div>
+            </div><!-- e:card -->
+            <div class="card">
+                <p class="photo"><img src="images/card/card2.png" alt=""></p>
+                <h2>입양카드</h2>
+                <div class="contents">
+                    <p>나이:2살</p>
+                    <p>품종 : 코리안 숏헤어</p>
+                    <p>특징 : 애교쟁이</p>
+                    <p>사랑스러운 애기 입양하실 집사님을 기다려요~ 입양 문의주세요</p>
+                </div>
+            </div><!-- e:card -->
+            <div class="card">
+                <p class="photo"><img src="images/card/card3.png" alt=""></p>
+                <h2>입양카드</h2>
+                <div class="contents">
+                    <p>나이:2살</p>
+                    <p>품종 : 코리안 숏헤어</p>
+                    <p>특징 : 애교쟁이</p>
+                    <p>사랑스러운 애기 입양하실 집사님을 기다려요~ 입양 문의주세요</p>
+                </div>
+            </div><!-- e:card -->
+            <div class="card">
+                <p class="photo"><img src="images/card/card4.png" alt=""></p>
+                <h2>입양카드</h2>
+                <div class="contents">
+                    <p>나이:2살</p>
+                    <p>품종 : 코리안 숏헤어</p>
+                    <p>특징 : 애교쟁이</p>
+                    <p>사랑스러운 애기 입양하실 집사님을 기다려요~ 입양 문의주세요</p>
+                </div>
+            </div><!-- e:card -->
+            <div class="card">
+                <p class="photo"><img src="images/card/card5.png" alt=""></p>
+                <h2>입양카드</h2>
+                <div class="contents">
+                    <p>나이:2살</p>
+                    <p>품종 : 코리안 숏헤어</p>
+                    <p>특징 : 애교쟁이</p>
+                    <p>사랑스러운 애기 입양하실 집사님을 기다려요~ 입양 문의주세요</p>
+                </div>
+            </div><!-- e:card -->
+        </div><!-- e:card_wrap -->
+        <div id="qa_wrap">
+            <h2>입양문의</h2>
+            <form action="#" method="post" id="qa_frm">
+                <fieldset>
+                    <legend class="skip">문의양식</legend>
+                    <ul>
+                        <li><input type="text" placeholder="이름" name="user_name"></li>
+                        <li><input type="text" placeholder="전화번호" name="user_phone"></li>
+                        <li><textarea name="qa_c" id="qa_c" placeholder="문의사항"></textarea></li>
+                    </ul>
+                    <p><button id="qa_btn" type="submit">문의하기</button></p>
+                </fieldset>
+            </form>
+        </div><!-- e:qa_wrap -->
+    </main>
+    <div id="f_bg">
+        <footer>
+            copyright &copy; 2022.06.23
+        </footer>
+    </div>
+</body>
+</html>

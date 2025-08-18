@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scaleble=no">
+    <title>@media</title>
+    <style>
+        /* 
+        반응형웹설계순서
+        1. mobile -> desktop(@media) 작은->큰 화면 설계
+        2. desktop -> mobile(@media) 큰->작은 화면 설계
+        */
+        body,html {background: aqua;}
+        @media screen and (max-width:900px) {
+            /* 선택자 {속성:값; 속성:값;} */
+            body,html {background: lime;}
+        }/* media 900  end */
+        @media screen and (max-width:500px) {
+            /* 선택자 {속성:값; 속성:값;} */
+            body,html {background: red;}
+        }/* media 500 */
+    </style>
+</head>
+<body>
+    <h1>반응형웹 <span>TEST</span></h1>
+</body>
+</html>  

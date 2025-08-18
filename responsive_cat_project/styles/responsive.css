@@ -1,0 +1,78 @@
+@media screen and (max-width:1200px) {
+
+    /* 1.layout size */
+    #h_bg header {width: calc(100% - 32px)}
+    main #slide_wrap,
+    main #gallery,
+    main #campain_txt,
+    main #card_wrap,
+    main #qa_wrap {width: calc(100% - 32px); overflow:hidden}
+
+    /* 2.header Design */
+    /* 3.main-1 banner */
+    /* 4.main-2 gallery */
+    main #gallery a:nth-last-child(1),
+    main #gallery a:nth-last-child(2) {display: none;}
+    main #gallery a:nth-last-child(3) {margin: 0;}
+    /* 5.main-3 text banner */
+    /* 6.main-4 card */
+    main #card_wrap .card:nth-last-child(1) {display: none;}
+    /* 7. main-5 입양문의 */
+    /* 8. footer */
+}/* media 1200 end */
+/* tablet ~ mobile */
+@media screen and (max-width:850px) {
+    
+    /* 1.header */
+    #h_bg header nav {display: none;}
+    #h_bg header #m_menu {
+        display: block; width: 24px;
+        height: 24px; text-align: center;
+        line-height: 24px;
+    }
+    #h_bg header #m_nav {
+        /* display:block; */
+        position: fixed; right:0; top:64px;
+        width:50%; height:100vh;    /* 뷰포트 높이 퍼센트 */
+        background-color:#fff;
+        z-index:999;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        padding: 0 20px;
+
+        display: none;  /* 메뉴 클릭 전 초기 숨기기 */
+    }
+    #h_bg header #m_nav a {
+        /* background: yellow; */
+        padding: 20px 0;
+        text-align: center;
+        border-bottom: 1px dashed #ccc;
+    }
+    #h_bg header #m_nav a:last-child {border:0;}
+    /*  main2 gallery */
+    /* main3 txt_banner */
+    /* main4 card */
+    main #card_wrap .card:nth-last-child(2) {display: none;}
+}/* media 850 */
+
+@media screen and (max-width:480px) {
+
+    /* main1 banner */
+    main #slide_wrap {height: 268px;}
+    main #slide_wrap #slide_bnr p img {
+        /* margin-left: -450px; */
+        width: 150%;   
+    }
+    /* main2 gallery */
+    main #gallery a {width: 40px; margin-right: 10px;}
+    main #gallery .active {width: 80px;}
+    /* main3 txt_banner */
+    main #campain_bg #campain_txt {text-align: left;}
+    main #campain_bg #campain_txt span:last-child {
+        display: block;
+        line-height: 2;
+    }
+    /* main4 card */
+    main #card_wrap .card:nth-last-child(3) {display: none;}
+}    /* media480 */

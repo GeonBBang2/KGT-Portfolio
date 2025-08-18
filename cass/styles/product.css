@@ -1,0 +1,180 @@
+main::before {
+    content: '';
+    display: block;
+    height: 145px;
+}
+main {}
+main h2 {
+    font-family: 'kanit';
+    font-size: 3rem; font-weight: 700;
+    color: #fff;
+    margin-bottom: 50px
+}
+main .product_txt {
+    color: #fff; width: 35%;
+}
+main .product_txt p {
+    margin-bottom: 50px; line-height: 1.7;
+    letter-spacing: -0.02rem;
+}
+main .product_txt .product_info span:nth-child(1) {margin-right: 10px;}
+main .product_txt .product_info span::before {
+    content: '';
+    display: inline-block;
+    border: 1px solid #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+    background-color: #fff;
+}
+main > div > p {
+    font-family: 'kanit';
+    font-style: italic;
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    text-align: right;
+}
+
+
+main #cass_fresh {
+    margin: 0 auto 100px;
+    width: calc(100% - 280px);
+    height: 750px;
+    background-position: 80px -80px;
+    background-size: 80%;
+    background-image: url(../images/product_bg01_cassfresh.png);
+    padding: 50px 0 0 120px;
+    position: relative;
+}
+main #cass_fresh h2 {}
+main #cass_fresh .product_txt {}
+main #cass_fresh .product_txt p {}
+main #cass_fresh .product_txt .product_info {}
+main #cass_fresh .product_txt .product_info span {}
+main #cass_fresh {}
+main #cass_fresh .product_txt .product_row1 {}
+main #cass_fresh .product_txt .product_row2 {}
+main #cass_fresh .product_txt .product_row3 {}
+main #cass_fresh .product_title {}
+main #cass_fresh > p {font-size: 4.5rem;}
+
+main #cass_fresh > p:nth-child(3) {
+    right: 300px; top: 100px;}
+main #cass_fresh > p:nth-child(4) {
+    right: 200px;  top: 250px;}
+main #cass_fresh > p:nth-child(4) span {
+    color: #ffcb30; font-size: 3.8rem;
+    font-family: 'kanit';
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* #cass_zero */
+
+main #cass_zero {
+    margin: 0 auto 100px;
+    width: calc(100% - 280px);
+    height: 750px;
+    background-position: 80px -80px;
+    background-size: 80%;
+    background-image: url(../images/product_bg02_casszero.png);
+    padding: 50px 0 0 120px;
+    position: relative;
+}
+
+main #cass_zero h2 {opacity:0;}
+main #cass_zero .product_txt {}
+main #cass_zero .product_txt p {}
+main #cass_zero .product_txt .product_info {opacity:0;}
+main #cass_zero .product_txt .product_info span {}
+main #cass_zero {}
+main #cass_zero .product_txt .product_row1 {opacity:0;}
+main #cass_zero .product_txt .product_row2 {opacity:0;}
+main #cass_zero .product_txt .product_row3 {opacity:0;}
+main #cass_zero .product_title {}
+main #cass_zero > p {font-size: 3.5rem;}
+
+main #cass_zero > p:nth-child(3) span {
+    color: #ffcb30; font-size: 3.8rem;
+    font-family: 'kanit';
+    font-weight: 700;
+    font-style: italic;
+}
+main #cass_zero > p:nth-child(3) {opacity:0;
+    right: 50px; top: 100px;}
+main #cass_zero > p:nth-child(4) {opacity:0;
+    right: 50px;  top: 150px;}
+main #cass_zero > p:nth-child(5) {opacity:0;
+    right: 50px;  top: 220px;}
+
+/* cass light */
+main #cass_light {
+    margin: 0 auto 100px;
+    width: calc(100% - 280px);
+    height: 750px;
+    background-position: 200px -80px;
+    background-size: 70%;
+    background-image: url(../images/product_bg03_casslight.png);
+    padding: 50px 0 0 120px;
+    position: relative;
+}
+main #cass_light h2 {opacity:0;}
+main #cass_light .product_txt {}
+main #cass_light .product_txt p {}
+main #cass_light .product_txt .product_info {opacity:0;}
+main #cass_light .product_txt .product_info span {}
+main #cass_light {}
+main #cass_light .product_txt .product_row1 {opacity:0;}
+main #cass_light .product_txt .product_row2 {opacity:0;}
+main #cass_light .product_txt .product_row3 {opacity:0;}
+main #cass_light .product_title {}
+main #cass_light > p {font-size: 3.5rem; }
+main #cass_light > p:nth-child(3),
+main #cass_light > p:nth-child(4){opacity:0;}
+
+main #cass_light > p:nth-child(3) {
+    right: 200px; top: 100px;}
+main #cass_light > p:nth-child(4) {
+    right: 200px;  top: 170px;}
+main #cass_light > p:nth-child(3) span {
+    color: #ffcb30; font-size: 3.8rem;
+    font-family: 'kanit';
+    font-weight: 700;
+    font-style: italic;
+}
+
+main div .slide_h2 {
+    animation: slideup 0.5s both;
+}
+main div .slide_product_info {
+    animation: slideup 1s 0.5s both;
+}
+main div .slide_product_row1 {
+    animation: slideup 1s 1s both;
+}
+main div .slide_product_row2 {
+    animation: slideup 1s 1.5s both;
+}
+main div .slide_product_row3 {
+    animation: slideup 1s 2s both;
+}
+main div .slide_p_3child {
+    animation: slideright 0.3s 2.5s both;
+}
+main div .slide_p_4child {
+    animation: slideright 0.3s 2.7s both;
+}
+main div .slide_p_5child {
+    animation: slideright 0.3s 2.9s both;
+}
+
+@keyframes slideup{
+    0% {opacity:0; transform:translateY(25px);}
+    100% {opacity:1; transform:translateY(0);}
+}
+@keyframes slideright{
+    0% {opacity:0; transform:translateX(100px) rotate(-10deg);}
+    100% {opacity:1; transform:translateX(0) rotate(-10deg);}
+}

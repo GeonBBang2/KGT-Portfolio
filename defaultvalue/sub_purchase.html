@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구매 | DEFAULT VALUE</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/sub_purchase.css">
+    <link rel="stylesheet" href="styles/sub_purchase_responsive.css">
+    <link rel="stylesheet" href="styles/common_resposive.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+</head>
+<body>
+    <?php include("header.php");?>
+    <main>
+        <div id="order_wrap">
+            <div class="left">
+                <img src="images/p1_hover.jpg" alt="">
+                <div class="left_btm">
+                    <h1>DETAILS</h1>
+                    <img src="images/purchase_01.jpg" alt="">
+                </div>
+                <div class="right">
+                    <div class="top">
+                        <h1>DFLT LOGO TEE WHITE</h1>
+                        <p>
+                            국내산 직조된 싱글 원단을 사용하여
+                            밀도감이 촘촘하고 비침이 없습니다
+                        </p>
+                        <p>
+                            한 시즌만 착용하고 버려지는 저가의 원단이 아닌
+                            오랫동안 착용할 수 있도록 품질에 신경 쓴 티셔츠입니다
+                        </p>
+                        <dl>
+                            <dt>Price</dt>
+                            <dd class="price">35,000원</dd>
+                            <dt>Size</dt>
+                            <dd>
+                                <select name="Option">
+                                    <option value="">------------</option>
+                                    <option value="middle size">M</option>
+                                    <option value="large size">L</option>
+                                </select>
+                            </dd>
+                        </dl>
+                        <div class="number">
+                            <p class="order_name">DFLT LOGO TEE WHITE</p>
+                            <div class="order_number">
+                                <input type="number" name="num" id="num">
+                                <button type="button" id="order_btn_num">수량입력</button>
+                            </div>
+                        </div>
+                        <div class="total_price">
+                            <p>총 상품 금액</p>
+                            <p class="result_price"><span class="result_price_num">35,000</span>원</p>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <button type="button" id="order_btn">ORDER</button>
+                        <button type="button" id="cart_btn">CART</button>
+                        <button type="button" id="like_btn"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mobile_order">
+            <button type="button" id="mobile_like_btn"></button>
+            <button type="button" id="mobile_order_btn">ORDER</button>
+            <div class="mo_order_appear">
+                <p class="mo_close_btn"><img src="images/arrow.png" alt=""></p>
+                <p class="order_name">DFLT LOGO TEE WHITE</p>
+                <select name="Option">
+                    <option value="">Select-Size</option>
+                    <option value="middle size">M</option>
+                    <option value="large size">L</option>
+                </select>
+                <div class="num_price">
+                    <div class="number">
+                        <div class="order_number">
+                            <input type="number" name="num" id="num">
+                            <button type="button" id="order_btn_num">수량입력</button>
+                        </div>
+                    </div>
+                    <div class="total_price">
+                        <p>총 상품 금액 :</p>
+                        <p class="result_price"><span class="result_price_num">35,000</span>원</p>
+                    </div>
+                </div>
+            </div><!-- mo_order_appear -->
+        </div>
+    </main>
+    <?php include("footer.php");?>
+    <script src="scripts/sub_purchase.js"></script>
+    <script src="scripts/common.js"></script>
+    <script src="scripts/sub_etc.js"></script>
+</body>
+</html>

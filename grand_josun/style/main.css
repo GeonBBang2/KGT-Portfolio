@@ -1,0 +1,388 @@
+/* main */
+main {}
+/* 1. slide_wrap */
+main #slide_check_wrap {
+    /* position: relative; */
+}
+main #slide_check_wrap #slide_wrap {
+    height: 900px;
+    overflow: hidden;
+}
+main #slide_check_wrap #slide_wrap #slide_container {}
+main #slide_check_wrap #slide_wrap #slide_container .slide {
+    position: absolute; left: 0;top: 0;opacity: 0;
+    transition: opacity 0.5s;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 900px;
+    text-indent: -9999px;
+}
+main #slide_check_wrap #slide_wrap #slide_container .slide1 {
+    background-image: url(../images/bg_main01.jpg); opacity: 1;
+}
+main #slide_check_wrap #slide_wrap #slide_container .slide2 {
+    background-image: url(../images/bg_main02.jpg);
+}
+main #slide_check_wrap #slide_wrap #slide_container .slide3 {
+    background-image: url(../images/bg_main03.jpg);
+}
+/* 2. check_wrap */
+main #slide_check_wrap #check_wrap {
+    position: absolute;
+    width: 1400px;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+/* 2-1. check_wrap close */
+main #slide_check_wrap #check_wrap .check_close {}
+main #slide_check_wrap #check_wrap .check_close h1 {
+    font-family: 'Noto Serif KR', serif; font-weight: 500;
+    font-size: 4.0rem;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+main #slide_check_wrap #check_wrap .check_close h1+p {
+    font-size: 2.5rem;
+    letter-spacing: -0.02em;
+    margin: 20px 0;
+    color: #fff;
+}
+main #slide_check_wrap #check_wrap .check_close .bar {
+    height: 60px;
+    background: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+}
+main #slide_check_wrap #check_wrap .check_close .bar .date {
+    display: flex;
+    flex-flow: row nowrap;
+}
+main #slide_check_wrap #check_wrap .check_close .bar .date dt {}
+main #slide_check_wrap #check_wrap .check_close .bar .date dd {font-size: 1.25rem;}
+main #slide_check_wrap #check_wrap .check_close .bar .date dd:nth-child(2) {margin: 0 22px;}
+
+main #slide_check_wrap #check_wrap .check_close .bar .number {
+    display: flex;
+    flex-flow: row nowrap;
+    cursor: pointer;
+}
+main #slide_check_wrap #check_wrap .check_close .bar .number dd {}
+main #slide_check_wrap #check_wrap .check_close .bar .number dd:nth-child(3) {margin:0 40px;}
+main #slide_check_wrap #check_wrap .check_close .bar .number dd .num {
+    font-size: 1.25rem;
+}
+main #slide_check_wrap #check_wrap .check_close .bar .check_search {
+    width: 125px; height: 60px; background: #222; color: #fff;
+    font-size: 1.250rem; text-align: center; line-height: 60px;
+    transition: all 0.5s;
+}
+main #slide_check_wrap #check_wrap .check_close .bar .check_search:hover {
+    background: #fff;
+    color: #222;
+}
+/* 2-2. check_wrap open */
+main #slide_check_wrap #check_wrap .check_open {
+    background: #fff;
+    position: absolute;
+    width: 100%; height: 526px; 
+    bottom: 60px;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    /* display: block;스크립트 적용 전 숨김 */
+    height: 0;
+    transition: height 1s;
+}
+main #slide_check_wrap #check_wrap .check_open .contents {
+    display: flex; flex-flow: row nowrap;
+    width: 80%; margin: 98px auto 0;
+}
+main #slide_check_wrap #check_wrap .check_open .contents .room_select {
+    width: calc(100% - 200px);
+}
+main #slide_check_wrap #check_wrap .check_open .contents .room_select .room {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-bottom: 30px;
+    
+}
+main #slide_check_wrap #check_wrap .check_open .contents .room_select .room1 {}
+main #slide_check_wrap #check_wrap .check_open .contents .room_select .room2 {}
+main #slide_check_wrap #check_wrap .check_open .contents .room_select .room3 {margin: 0;}
+main #slide_check_wrap #check_wrap .check_open .contents .room_select .room dt {font-size: 1.25rem;}
+main #slide_check_wrap #check_wrap .check_open .contents .room_select .room dd {
+    width: 362px; margin-left: 30px;
+    padding: 30px 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #222;
+}
+main #slide_check_wrap #check_wrap .check_open .contents .room_select .room dd .minus,
+main #slide_check_wrap #check_wrap .check_open .contents .room_select .room dd .plus {
+    font-size: 1.25rem;
+    width: 24px;
+    height: 24px;
+
+}
+main #slide_check_wrap #check_wrap .check_open .contents .room_select .room dd .minus {}
+main #slide_check_wrap #check_wrap .check_open .contents .room_select .room dd .plus {}
+main #slide_check_wrap #check_wrap .check_open .contents .room_select .room dd > span {font-size: 1.25rem;}
+main #slide_check_wrap #check_wrap .check_open .contents .room_select .room dd > span span {margin-left: 5px; font-size: 1.25rem;}
+main #slide_check_wrap #check_wrap .check_open .contents .right {}
+main #slide_check_wrap #check_wrap .check_open .contents .right p {
+    line-height: 1.7;
+    text-align: center;
+}
+main #slide_check_wrap #check_wrap .check_open .contents .right p:nth-child(2) {
+    margin-bottom: 10px;
+}
+main #slide_check_wrap #check_wrap .check_open .contents .right a {
+    display: block;
+    background: #222;
+    color: #fff;
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+main #slide_check_wrap #check_wrap .check_open .close {
+    position: absolute;
+    right: 20px; top: 16px;
+    width: 30px; height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+main #slide_check_wrap #check_wrap .check_open .close::after {
+    content: '\f00d'; font-weight: 600; 
+    }/*1.글씨취급을 한다 따라서 글씨관련 명령어 사용 2.fas등 접두사 붙으면 굵기 600이상 줘야함 */
+
+/* check_wrap open adult */
+main #slide_check_wrap #check_wrap .check_open .contents .room_select .room .adult {}
+main #slide_check_wrap #check_wrap .check_open .contents .room_select .room .adult .plus {}
+main #slide_check_wrap #check_wrap .check_open .contents .room_select .room .adult .minus {}
+main #slide_check_wrap #check_wrap .check_open .contents .room_select .room .adult > span {}
+main #slide_check_wrap #check_wrap .check_open .contents .room_select .room .adult > span .adult_num {}
+/* check_wrap open child */
+main #slide_check_wrap #check_wrap .check_open .contents .room_select .room .child {}
+main #slide_check_wrap #check_wrap .check_open .contents .room_select .room .child .plus {}
+main #slide_check_wrap #check_wrap .check_open .contents .room_select .room .child .minus {}
+main #slide_check_wrap #check_wrap .check_open .contents .room_select .room .child > span {}
+main #slide_check_wrap #check_wrap .check_open .contents .room_select .room .child > span .child_num {}
+/* 3. grand_info */
+main #grand_info {
+    padding: 80px 0; 
+    text-align: center;
+}
+main #grand_info h1{
+    font-family: 'Noto Serif KR', serif;
+    font-size: 6.25em; letter-spacing: -0.02em
+}
+main #grand_info h2{font-size: 1.50rem; letter-spacing: -0.02em; margin: 24px 0;}
+main #grand_info p{letter-spacing: -0.02em; line-height: 1.7; width: 40%; margin: 0 auto;}
+/* 4. offers_wrap */
+main #offers_wrap {
+    width: 1400px; margin: 0 auto; padding: 80px 0;
+}
+main #offers_wrap h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+main #offers_wrap .contents {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+main #offers_wrap .contents .active {
+    /* 공통active */
+    background: rgba(22, 68, 56, 0.8); display: flex;
+    width: 100%; height: 100%;
+    align-items: center; justify-content: center;
+    opacity: 0;/* 동적 기능 전 준비과정 */
+    transition: opacity 0.5s;
+}
+main #offers_wrap .contents .active:hover {
+    opacity: 1;
+}
+main #offers_wrap .contents .active span {
+    /* 공통active-span 자세히보기 */
+    color: #b29d95; border: 1px solid #b29d95;
+    padding: 15px 25px; display: inline-block;
+}
+main #offers_wrap .contents .offers_left {
+    width: calc(100% - 473px );
+}
+main #offers_wrap .contents .offers_left .o_l_top {
+    background-image: url(../images/img_offer01.jpg);
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: 352px;
+}
+main #offers_wrap .contents .offers_left .o_l_top .active {
+    
+}
+main #offers_wrap .contents .offers_left .o_l_top .active span {}
+
+main #offers_wrap .contents .offers_left .o_l_btm {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+main #offers_wrap .contents .offers_left .o_l_btm .o_l_b_left {
+    width: 49%;
+}
+/* 스페셜텍스트 공통 */
+main #offers_wrap .contents .offers_left .o_l_btm .special_txt {}
+main #offers_wrap .contents .offers_left .o_l_btm .special_txt .sub_title {
+    font-size: 0.750rem;
+    font-weight: 700;
+    color: #006633;
+}
+main #offers_wrap .contents .offers_left .o_l_btm .special_txt h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.250rem;
+    margin: 10px 0;
+}
+main #offers_wrap .contents .offers_left .o_l_btm .special_txt .content {}
+
+main #offers_wrap .contents .offers_left .o_l_btm .o_l_b_left .special_txt {}
+main #offers_wrap .contents .offers_left .o_l_btm .o_l_b_left .special_txt .sub_title {}
+main #offers_wrap .contents .offers_left .o_l_btm .o_l_b_left .special_txt h2 {}
+main #offers_wrap .contents .offers_left .o_l_btm .o_l_b_left .special_txt .content {}
+main #offers_wrap .contents .offers_left .o_l_btm .o_l_b_left .bnr {
+    background-image: url(../images/img_offer02.jpg);
+    background-size: cover;
+    height: 181px;
+    margin: 16px 0;
+}
+main #offers_wrap .contents .offers_left .o_l_btm .o_l_b_left .bnr .active {}
+main #offers_wrap .contents .offers_left .o_l_btm .o_l_b_left .bnr .active span {}
+
+main #offers_wrap .contents .offers_left .o_l_btm .o_l_b_right {width: 49%;}
+main #offers_wrap .contents .offers_left .o_l_btm .o_l_b_right .bnr {
+    background-image: url(../images/img_offer03.jpg);
+    background-size: cover;
+    height: 282px;
+    margin-bottom: 16px;
+}
+main #offers_wrap .contents .offers_left .o_l_btm .o_l_b_right .bnr .active {}
+main #offers_wrap .contents .offers_left .o_l_btm .o_l_b_right .bnr .active span {}
+main #offers_wrap .contents .offers_left .o_l_btm .o_l_b_right .special_txt {}
+main #offers_wrap .contents .offers_left .o_l_btm .o_l_b_right .special_txt .sub_title {}
+main #offers_wrap .contents .offers_left .o_l_btm .o_l_b_right .special_txt h2 {}
+main #offers_wrap .contents .offers_left .o_l_btm .o_l_b_right .special_txt .content {}
+
+main #offers_wrap .contents .offers_right {
+    background: url(../images/img_wedding.jpg);
+    background-size: cover;
+    margin-left: 20px; width: 453px; height: 755px;
+    position: relative;
+}
+main #offers_wrap .contents .offers_right .txt {
+    display: flex; flex-flow: column nowrap; color: #fff;
+    align-items: center; justify-content: center;
+    width: 100%; height: 100%;
+}
+main #offers_wrap .contents .offers_right .txt p {
+    line-height: 1.7;
+    letter-spacing: -0.02em;
+}
+main #offers_wrap .contents .offers_right .active {
+    left: 0; top: 0;
+    position: absolute;
+}
+main #offers_wrap .contents .offers_right .active span {}
+
+/* 5. discovery_wrap */
+main #discovery_wrap {
+    width: 65%;
+    overflow: hidden;
+    float: right;
+}
+main #discovery_wrap h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 2.5rem;
+}
+main #discovery_wrap .pagenation {
+    margin: 30px 0;
+}
+main #discovery_wrap .pagenation a {color: #ccc; margin-right: 40px; font-size: 1.250rem;}
+main #discovery_wrap .pagenation a:last-child {margin: 0;}
+main #discovery_wrap .pagenation .active {color: #222;}
+main #discovery_wrap #discovery_slide_wrap {}
+main #discovery_wrap #discovery_slide_wrap .slide_container {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; 
+    width: max-content; transition: transform 1s;
+    
+}
+main #discovery_wrap #discovery_slide_wrap .slide_container .slide {
+    width: 550px; margin-right: 50px;
+}
+main #discovery_wrap #discovery_slide_wrap .slide_container .slide1 {}
+main #discovery_wrap #discovery_slide_wrap .slide_container .slide2 {}
+main #discovery_wrap #discovery_slide_wrap .slide_container .slide3 { margin: 0;}
+main #discovery_wrap #discovery_slide_wrap .slide_container .slide .img {
+    background-size: cover; background-position: center; height: 300px; width: 100%;
+}
+main #discovery_wrap #discovery_slide_wrap .slide_container .slide1 .img {
+    background-image: url(../images/img_gallery01_05.jpg);
+}
+main #discovery_wrap #discovery_slide_wrap .slide_container .slide2 .img {
+    background-image: url(../images/img_gallery02_02.jpg);
+}
+main #discovery_wrap #discovery_slide_wrap .slide_container .slide3 .img {
+    background-image: url(../images/img_gallery02_03.jpg);
+}
+main #discovery_wrap #discovery_slide_wrap .slide_container .slide>* {font-size: 0.875rem;}
+main #discovery_wrap #discovery_slide_wrap .slide_container .slide h2 {color: #006633; margin-top: 10px;}
+main #discovery_wrap #discovery_slide_wrap .slide_container .slide p {line-height: 1.7;}
+main #discovery_wrap #discovery_slide_wrap .slide_container .slide p:nth-child(3) {margin: 10px 0 20px;}
+main #discovery_wrap #discovery_slide_wrap .slide_container .slide p:last-child {color: #ccc;}
+/* 6. Moments_wrap */
+main #moments_wrap {clear: both; text-align: center; padding: 80px 0;}
+main #moments_wrap h1 {font-size: 2.5rem; font-family: 'Noto Serif KR', serif;}
+main #moments_wrap h1::before {
+    content: ''; display: block;
+    width: 1px; height: 60px;
+    background: #000;
+    margin: 0 auto 30px;
+}
+main #moments_wrap p {margin: 30px 0;}
+main #moments_wrap .contents {display: flex; justify-content: center;}
+main #moments_wrap .contents a {padding: 25px 50px;}
+main #moments_wrap .contents .reservation {
+    background: #222; color: #fff; margin-right: 5px;
+}
+main #moments_wrap .contents .e_download {
+    border: 1px solid #222; color: #222;
+}
+
+/* 7. contact_wrap */
+main #contact_wrap {
+    margin: 0 auto; padding: 80px 0; background: #f1f1f1;
+}
+main #contact_wrap >* {width: 1400px; margin: 0 auto;}
+main #contact_wrap h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+main #contact_wrap p {
+    margin-bottom: 40px;
+}
+main #contact_wrap #map {
+    height: 728px;
+    background: gray;
+}
+
+

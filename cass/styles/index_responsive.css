@@ -1,0 +1,84 @@
+/* tablet w1024*/
+@media screen and (max-width:1024px) {
+    main #brand_story_bg,
+    main #history,
+    main #fresh_taste{
+        width: calc(100% - 32px);
+        text-align: left;
+    }
+
+    #header_bg header .header_top {
+        justify-content:center;
+    }
+    #header_bg header .header_top .sns {
+        display: none;
+    }
+    main .swiper-container {
+        height: 600px;
+    }
+    main .swiper-container .prev_btn,
+    main .swiper-container .next_btn {scale: 50%; top: 280px;}
+    main #fresh_taste .ingredients .ingre_explan {text-align: center;}
+    main #fresh_taste .ingredients .ingre_bg {
+        width: calc(100% - 224px);
+    }
+    
+}
+/* mobile w580*/
+@media screen and (max-width:580px) {
+    main::before {
+        height: 125px;
+    }
+    #header_bg {
+        height: 125px;
+    }
+    #header_bg header .header_top {
+        height: 80px;
+    }
+    #header_bg header .header_btm {
+        height: 45px;
+    }
+    #header_bg header .header_btm nav a {
+        line-height: 40px;
+    }
+    main .part_title {
+        font-size: 1.500rem;
+    }
+    main .part_text {
+        margin: 15px auto 30px;
+        font-size: 	0.750rem;
+    }
+    main #fresh_taste .ingredients {
+        flex-flow: row wrap;
+        margin: 0 auto;
+    }
+    main .swiper-container {
+        height: 400px;
+    }
+    main .swiper-container .prev_btn,
+    main .swiper-container .next_btn {scale: 25%; top: 160px;}
+
+    main #history .part_title,
+    main #campain .part_title {
+        margin-bottom: 40px;
+    }
+    main #campain {
+        width: 90%;
+    }
+    /* main #fresh_taste .ingredients .ingre_explan,
+    main #fresh_taste .ingredients .ingre_bg {
+        width: 224px;
+    }
+    main #fresh_taste .ingredients div:nth-child(5){
+        transform: translateY(224px);
+    }
+    main #fresh_taste .ingredients div:nth-child(6){
+        transform: translateY(-224px);
+    }
+    main #fresh_taste .ingredients div:nth-child(7){
+        transform: translateY(224px);
+    }
+    main #fresh_taste .ingredients div:nth-child(8){
+        transform: translateY(-224px);
+    } */
+}

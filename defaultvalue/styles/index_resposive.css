@@ -1,0 +1,55 @@
+@media screen and (max-width:1440px) {
+    main{width:calc(100% - 32px);}
+}
+
+@media screen and (max-width:1024px) {
+    main #category_products .products .products_btm .product:last-child{
+        display: none;
+    }
+}
+
+@media screen and (max-width:800px) {
+    main #main_slide_wrap {
+        height: 30vh;
+    }
+    main #category_products .nav_category {
+        display: none;
+    }
+    main #category_products .products .category_mobile {display: block; margin-bottom: 30px;}
+    main #category_products .products .products_btm .p_row1 {display: none;}
+    main #category_products .products .products_btm .product:nth-child(3) {
+        display: none;
+    }
+    main #category_products .products .products_btm .p_row1,
+    main #category_products .products .products_btm .p_row2,
+    main #category_products .products .products_btm .p_row3,
+    main #category_products .products .products_btm .p_row4,
+    main #category_products .products .products_btm .p_row5 {
+        justify-content: space-around;
+    }
+    main #notice_lookbook_wrap {flex-flow: column;}
+    main #notice_lookbook_wrap .lookbook_press {
+        width: 100%;
+    }
+    main #notice_lookbook_wrap .notice {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    main #notice_lookbook_wrap .notice .notice_btm {
+        margin: 0 auto;
+        width: 375px;
+        flex-flow: column nowrap;
+        
+    }
+    main #notice_lookbook_wrap .notice .notice_btm a.notice_img {
+        margin-bottom: 30px;
+        width: 100%;
+        height: 260px;
+    }
+    main #notice_lookbook_wrap .notice .notice_btm .noticelist{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:580px) {
+}

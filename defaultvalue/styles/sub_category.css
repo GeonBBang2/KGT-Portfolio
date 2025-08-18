@@ -1,0 +1,51 @@
+main {
+    width: 1440px;
+    margin: 50px auto 0;
+}
+main > h2 {
+    margin-bottom: 50px;
+}
+main .nav_category h2 {
+    font-size: 1.5rem;
+    font-family: 'Kanit';
+    margin-bottom: 14px;
+}
+
+main #category_products .products .products_top{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+main #category_products .products .category_mobile {}
+main #category_products .products .category_mobile .m_gnb {}
+main #category_products .products .category_mobile .m_gnb>li {
+    width: 50%;
+    height: 50px;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+}
+main #category_products .products .category_mobile .m_gnb>li>a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+main #category_products .products .category_mobile .m_gnb>li>a img {
+    transform: rotate(90deg);
+}
+main #category_products .products .category_mobile .m_gnb>li>.lnb {}
+main #category_products .products .category_mobile .m_gnb>li>.lnb li {}
+main #category_products .products .category_mobile .m_gnb>li>.lnb li a {}
+
+
+
+
+
+
+
+

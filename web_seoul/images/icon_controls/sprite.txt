@@ -1,0 +1,53 @@
+10
+Align elements:Left-right
+
+x
+.bg-ico_next {
+    width: 24px; height: 24px;
+    background: url('css_sprites.png') -36px -10px;
+}
+
+x
+.bg-ico_play {
+    width: 24px; height: 24px;
+    background: url('css_sprites.png') -80px -10px;
+}
+
+x
+.bg-ico_prev {
+    width: 24px; height: 24px;
+    background: url('css_sprites.png') -124px -10px;
+}
+
+x
+.bg-ico_stop {
+    width: 24px; height: 24px;
+    background: url('css_sprites.png') -168px -10px;
+}
+
+x
+.bg-keyboard {
+    width: 29px; height: 16px;
+    background: url('css_sprites.png') -212px -10px;
+}
+
+x
+.bg-btn_top {
+    width: 34px; height: 34px;
+    background: url('css_sprites.png') -261px -10px;
+}
+
+x
+.bg-icon_link {
+    width: 6px; height: 11px;
+    background: url('css_sprites.png') -10px -10px;
+}
+Drag & Drop files here or select them using:
+
+CHOOSE FILES
+DOWNLOAD
+Inspired by Stoyan - Designed by Chris Coyier
+
+Recommended Toptal CSS Resources
+Hire a CSS ExpertCSS Cheat SheetCSS Best PracticesSee all Toptal CSS resources
+Hire the top 3% of freelance talent¨Ï Copyright 2010 - 2021 Toptal, LLC

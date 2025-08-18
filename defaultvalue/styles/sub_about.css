@@ -1,0 +1,151 @@
+.about_wrap {}
+.about_wrap a {
+    transition: all 0.5s;
+}
+.about_wrap .about_bg {
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+.about_wrap .about_bg .about_filter {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100vh;
+    filter: brightness(70%);
+    background-image: url(../images/about_bg_01.jpg);
+    background-position: top;
+    background-size: contain;
+    background-attachment: fixed;
+}
+.about_wrap .about_bg .about_txt {
+    width: 100%;
+    position: absolute;
+    top: 250px;
+}
+.about_wrap .about_bg .about_txt h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 200px;
+}
+.about_wrap .about_bg .about_txt p span {font-size: 2.75rem;}
+.about_wrap .about_bg .about_txt p {
+    font-size: 1.85rem;
+    line-height: 1.7;
+}
+.about_wrap .default_bg {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+.about_wrap .default_bg .default_filter {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100vh;
+    filter: brightness(70%);
+    background-image: url(../images/about_bg_02.jpg);
+    background-position: top;
+    background-size: contain;
+    background-attachment: fixed;
+    transition: all 1s;
+}
+.about_wrap .default_bg .default_txt {
+    position: absolute;
+    top: 200px;
+    padding-left: 200px;
+}
+.about_wrap .default_bg .default_txt h1::before {
+    content: '';
+    display: block;
+    width: 300px;
+    height: 1px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.about_wrap .default_bg .default_txt h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.about_wrap .no_bg {
+    height: 300px;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 130px 0 0 900px;
+}
+.about_wrap .no_bg a:hover {
+    background-color: #333;
+    color: #fff;
+}
+.about_wrap .no_bg a {
+    width: 100px;
+    height: 50px;
+    font-size: 1.5em;
+    text-align: center;
+    border: 1px solid #333;
+    line-height: 48px;
+    font-weight: 700;
+    margin-left: 250px;
+}
+.about_wrap .no_bg p {
+    font-size: 3.5rem;
+    color: #333;
+}
+
+.about_wrap .adress_bg {
+    position: relative;
+}
+.about_wrap .adress_bg .adress_filter {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100vh;
+    filter: brightness(70%);
+    background-image: url(../images/about_bg_03.jpg);
+    background-position: top;
+    background-size: contain;
+    background-attachment: fixed;
+    transition: all 1s;
+}
+.about_wrap .adress_bg .adress_txt {}
+.about_wrap .adress_bg .adress_txt p {
+    font-size: 1.85rem;
+    color: #fff;
+    line-height: 1.7;
+}
+.about_wrap .adress_bg .adress_container {
+    position: absolute;
+    top: 300px;
+    margin-left: 250px;
+}
+.about_wrap .adress_bg a:hover {
+    background-color: #fff;
+    color: #333;
+}
+.about_wrap .adress_bg a {
+    display: block;
+    width: 100px;
+    height: 50px;
+    font-size: 1.5em;
+    text-align: center;
+    border: 1px solid #fff;
+    line-height: 48px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.scroll {
+    position: absolute;
+    bottom: 120px;
+    animation: updown 1s linear alternate infinite;
+}
+
+@keyframes updown {
+    0% {transform: translateY(-10px);}
+    100% {transform: translateY(10px);}
+}
+@keyframes leftright {
+    0% {transform: translateX(-30px);}
+    100% {transform: translateX(30px);}
+}

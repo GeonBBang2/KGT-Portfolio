@@ -1,0 +1,139 @@
+#h_bg {
+    background: #fff;
+    /* box-shadow: x y blur color; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: fixed; left: 0; top: 0; z-index: 998;
+    width: 100%;
+}
+/* header */
+#h_bg header {
+    width: 1200px; height: 64px; margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#h_bg header h1 {}
+#h_bg header h1 a {}
+#h_bg header h1 a img {}
+#h_bg header nav {/* background: lime; */}
+#h_bg header nav a {
+    margin-left: 16px;
+    letter-spacing: -0.02em;
+    /* background: yellow; */
+}
+#h_bg header nav a:first-child {margin: 0;}
+/* 모바일 내비 */
+#h_bg header #m_menu {display: none;}
+#h_bg header #m_menu img {}
+#h_bg header #m_nav {display: none;}
+#h_bg header #m_nav a {}
+/* main */
+main {}
+/* 1200 + 가운데 정렬 그룹선택자 */
+main #slide_wrap,
+main #gallery,
+main #campain_txt,
+main #card_wrap,
+main #qa_wrap
+{width: 1200px; margin: 0 auto;}
+/* main-배너 */
+main #slide_wrap {position: relative;}/* 이전,다음 위치기준 */
+main #slide_wrap #slide_bnr {}
+main #slide_wrap #slide_bnr p {display: none;}
+/* main #slide_wrap #slide_bnr p:nth-child(2) {display: block;} */
+main #slide_wrap #slide_bnr .active {display: block;}
+main #slide_wrap #slide_bnr p img {}
+main #slide_wrap>a {position: absolute;}
+main #slide_wrap>a img {}
+main #slide_wrap .prev {left: 10px; top: 50%;}
+main #slide_wrap .prev img {}
+main #slide_wrap .next {right: 10px; top: 50%;}
+main #slide_wrap .next img{}
+main #slide_wrap .indicator {
+    position: absolute; bottom: 30px;;
+    width: 100%; /* text-align: center; */
+    display: flex; flex-flow: row nowrap; justify-content: center;
+}
+main #slide_wrap .indicator a {
+    width: 8px; height: 8px; margin-right: 10px;
+    display: inline-block; background-color: #aaa;
+    border-radius: 50%; text-indent: -9999px;
+}
+main #slide_wrap .indicator a:last-child {margin: 0;}
+main #slide_wrap .indicator .active {background-color: #fff;}
+/* main-갤러리 */
+main #gallery {
+    padding: 50px 0;
+    display: flex; flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+main #gallery a {margin-right: 16px;}
+main #gallery a:last-child {margin: 0;}
+main #gallery .active {width: 170px;}
+main #gallery .active img {width: 100%;}
+main #gallery a img {width: 100%;}
+/* main-텍스트배너 */
+main #campain_bg {background: #222;}
+main #campain_bg #campain_txt {
+    text-align: center;
+    padding: 50px 0;
+}
+main #campain_bg #campain_txt span {color: #ccc; font-size: 0.813rem; letter-spacing: -0.02;}
+main #campain_bg #campain_txt span em {color: #fff; font-size: 0.813rem; letter-spacing: -0.02;}
+main #campain_bg #campain_txt span:last-child {}
+/* main-입양카드 */
+main #card_wrap {
+    display: flex; flex-flow: row nowrap; 
+    padding: 50px 0;
+    justify-content: space-around;
+}
+main #card_wrap .card {
+    background-color: #f5f5f5;
+    border-radius: 10px; width: 200px;
+    padding: 15px;
+    margin: 5px;
+}
+main #card_wrap .card .photo {text-align: center;}
+main #card_wrap .card .photo img {}
+main #card_wrap .card h2 {padding: 10px 0; font-size: 0.875rem; letter-spacing: -0.02;}
+main #card_wrap .card .contents {}
+main #card_wrap .card .contents p{
+    margin: 20px 0;
+    font-size: 0.813rem;
+    letter-spacing: -0.02;
+    line-height: 1.4;
+}
+main #card_wrap .card .contents p:last-child{padding-top: 30px;}
+/* main-입양문의 */
+main #qa_wrap {padding: 50px 0;}
+main #qa_wrap h2 {font-size: 0.875rem; letter-spacing: -0.02; margin-bottom: 15px;}
+main #qa_wrap #qa_frm {}
+main #qa_wrap #qa_frm fieldset {}
+main #qa_wrap #qa_frm fieldset ul {}
+main #qa_wrap #qa_frm fieldset ul li {
+    font-size: 0.813rem; letter-spacing: -0.02; margin-bottom: 15px;;
+}
+main #qa_wrap #qa_frm fieldset ul li input[name^=user]{}
+main #qa_wrap #qa_frm fieldset ul li input[name^=user],
+main #qa_wrap #qa_frm fieldset ul li #qa_c {
+    background-color: #f5f5f5;
+    padding: 10px;
+    width: 100%; 
+}
+main #qa_wrap #qa_frm fieldset ul li input[name$=name] {}
+main #qa_wrap #qa_frm fieldset ul li input[name$=phone] {}
+main #qa_wrap #qa_frm fieldset ul li #qa_c {height: 150px;}
+main #qa_wrap #qa_frm fieldset p {}
+main #qa_wrap #qa_frm fieldset p #qa_btn {
+    background-color: #222; color: #fff;
+    width: 100%; height: 50px;
+    border-radius: 10px;
+}
+/* footer */
+#f_bg {width: 100%; padding: 30px 0; background-color: #222; color: #fff;
+text-align: center; }
+#f_bg footer {line-height: 75px; letter-spacing: -0.02; font-size: 0.875rem; font-weight: 300;}
+
+

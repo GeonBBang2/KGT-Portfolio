@@ -1,0 +1,39 @@
+@media screen and (max-width:1024px) {
+    main #cass_fresh,
+    main #cass_zero,
+    main #cass_light {
+        width: calc(100% - 16px);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 0 140px;
+        padding: 160px 0 0 20px;
+    }
+    main #cass_fresh .product_txt .product_row3 {
+        display: none;
+    }
+    main #cass_fresh > p:nth-child(3) {
+        right: 100px;
+        top: 200px;
+    }
+    main #cass_fresh > p:nth-child(4) {
+        right: 150px;
+        top: 270px;
+    }
+    main #cass_light{
+        background-position: 0 -80px;
+    }
+    main h2{
+        font-size: 1.5rem;
+    }
+    main #cass_fresh p {font-size: 0.8rem;}
+    main #cass_fresh > p {
+        font-size: 2rem;
+    }
+    main #cass_fresh > p:nth-child(4) span {
+        font-size: 1.8rem;
+        font-family: 'kanit';
+        font-weight: 700;
+        font-style: italic;
+    }
+}

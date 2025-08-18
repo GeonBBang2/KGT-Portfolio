@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0714-classList</title>
+    <style>
+        .a{background: yellow;}
+        .b{background: aqua;}
+        .c{background: coral;}
+    </style>
+    <script>
+
+        window.onload=function(){
+
+            const btn= document.querySelector('#btn')
+            console.log(btn)
+            
+            btn.classList.add('a')
+            btn.classList.add('b')
+            btn.classList.add('c')
+            btn.addEventListener('click',function(){
+                btn.classList.remove('b')
+            })
+        }
+        
+
+    </script>
+</head>
+<body>
+    <button id="btn" type="button">btn</button>
+</body>
+</html>

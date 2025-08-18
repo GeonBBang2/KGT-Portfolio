@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test2</title>
+    <style>
+        /* 공통 */
+        .all {background: aqua; height: 100px; width: 1000px; margin: 30px auto;}
+        .all .box {width: 30px; height: 30px; border: 1px solid black; }
+        .all .a {background: pink;}
+        .all .b {background: yellow;}
+        /* 개별1 relative*/
+        .all:nth-child(1) {}
+        .all:nth-child(1) .box {position:relative;}
+        .all:nth-child(1) .a {left: 100px;}
+        .all:nth-child(1) .b {top: -20px;}
+        /* 개별2 */
+        .all:nth-child(2) {position:relative;}
+        .all:nth-child(2) .box {position: absolute;}
+        .all:nth-child(2) .a {top:20px;}
+        .all:nth-child(2) .b {right:0;}
+        /* 개별3 */
+        html,body {height: 300vh;}
+        .all:nth-child(3) {}
+        .all:nth-child(3) .box {position: fixed;}
+        .all:nth-child(3) .a {right: 10px; top: 10px;}
+        .all:nth-child(3) .b {right: 20px; bottom: 20px;}
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+    </div>
+    <div class="all">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+    </div>
+    <div class="all">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+    </div>
+</body>
+</html>

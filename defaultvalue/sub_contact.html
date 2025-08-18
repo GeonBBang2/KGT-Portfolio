@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Default value 공식 온라인 스토어('Normal, Ordinary and Usual')">
+    <meta name="keywords" content="베이직, 웨어러블, 감성, 스트릿웨어, 스트릿패션 브랜드, 베이직 디자인">
+    <title>Contact | 디폴트벨류(DEFAULT VALUE)</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <link rel="icon" href="images/favicon.jpg" type="image/x-icon">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/sub_contact.css">
+    <link rel="stylesheet" href="styles/sub_contact_responsive.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/common_resposive.css">
+</head>
+<body>
+    <?php include("header.php");?>
+    <main>
+        <div id="contact_wrap">
+                <h2 style="font-size: 2rem; font-family: 'Kanit';">Contact</h2>
+            <div class="contact">
+                <div class="info">
+                    <p>B203, 39, DASAN-RO 29-GIL</p>
+                    <p>JUNG-GU, SEOUL</p>
+                    <p>shopdefault@naver.com</p>
+                    <p>Tel.02.499.5741</p>
+                </div>
+                <div id="map"></div>
+            </div>
+        </div><!-- contact_wrap -->
+    </main>
+    <?php include("footer.php");?>
+    <script src="scripts/jquery-3.6.0.js"></script>
+    <script src="scripts/sub_contact.js"></script>
+    <script src="scripts/common.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3db10d59e205765199b9f58cbc4f56ad"></script>
+    <script>
+        var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        var options = { //지도를 생성할 때 필요한 기본 옵션
+            center: new kakao.maps.LatLng(37.5615523,127.0118253), //지도의 중심좌표.
+            level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+        var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+        var markerPosition  = new kakao.maps.LatLng(37.5615523,127.0118253); 
+        // 마커를 생성합니다
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+        // 마커가 지도 위에 표시되도록 설정합니다
+        marker.setMap(map);
+    </script>
+</body>
+</html>

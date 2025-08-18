@@ -1,0 +1,17 @@
+@media screen and (max-width:1440px) {
+    main {
+        width: calc(100% - 32px);
+    }
+}
+@media screen and (max-width:800px) {
+    main #contact_wrap .contact{
+        flex-flow: column nowrap;
+    }
+    main #contact_wrap .contact #map{
+        width: calc(100% - 32px);
+    }
+    main #contact_wrap .contact .info {
+        width: calc(100% - 32px);
+        margin-bottom: 50px;
+    }
+}

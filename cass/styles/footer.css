@@ -1,0 +1,10 @@
+/* footer */
+footer{
+    clear: both;
+    background-image: url(../images/pattern.jpg);
+    padding: 40px 0;
+    text-align: center;
+}
+footer img {}
+footer p {margin: 24px 0;}
+footer p:last-child {margin: 0;}

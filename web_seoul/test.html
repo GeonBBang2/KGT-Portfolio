@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        #all {width: 1000px; margin: 50px auto; background: yellow;
+            /* felx연습 */
+            display: flex;
+            /* flex-direction */
+            /* flex-wrap: nowrap; */
+            flex-flow:row nowrap; height: 600px;
+            /* justify-content:center; */
+            justify-content: space-around;
+            /* align-content: space-between; */
+            align-items: flex-end;
+    }
+        #all .box{border: 1px solid #222; width: 200px; height: 200px;}
+        #all .box:nth-child(2n+1) {background: aqua;}
+        /* #all .box:nth-child(odd){background: aqua;}
+        #all .box:nth-child(even){background: coral;} */
+        #all .bg1{order:3;}
+        #all .bg2{order:1 ;}
+        #all .bg3{align-self:center; order: 2;}
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div class="bg1 box">A</div>
+        <div class="bg2 box">B</div>
+        <div class="bg3 box">C</div>
+        <div class="bg3 box">C</div>
+        <div class="bg3 box">C</div>
+        <div class="bg3 box">C</div>
+        <div class="bg3 box">C</div>
+        <div class="bg3 box">C</div>
+    </div>
+</body>
+</html>

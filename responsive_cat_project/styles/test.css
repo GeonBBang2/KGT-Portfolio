@@ -1,0 +1,47 @@
+#h_bg {
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+#h_bg header {
+    width: 1200px; height: 64px; margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#h_bg header h1 {}
+#h_bg header h1 a {}
+#h_bg header nav {}
+#h_bg header nav a {margin-left: 16px; letter-spacing: -0.02;}
+#h_bg header nav a:first-child {margin: 0;}
+
+main #slide_wrap {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+main #slide_wrap #slide_bnr {}
+main #slide_wrap #slide_bnr p {display: none;}
+main #slide_wrap #slide_bnr p img {}
+main #slide_wrap #slide_bnr .active {display: block;}
+main #slide_wrap>a {position: absolute;}
+main #slide_wrap>a img {}
+main #slide_wrap .prev {left: 10px; top: 50%;}
+main #slide_wrap .next {right: 10px; top: 50%;}
+main #slide_wrap .indicator  {
+    position: absolute;
+    width: 100%; bottom: 30px;
+    display: block;
+    text-align: center;
+
+}
+main #slide_wrap .indicator a {
+    width: 8px; height: 8px;
+    background: #aaa;
+    display: inline-block;
+    border-radius: 50%;
+    text-indent: -9999px;
+    margin-right: 10px;
+}
+main #slide_wrap .indicator a:last-child {margin: 0;}
+main #slide_wrap .indicator .active {background: #fff;}

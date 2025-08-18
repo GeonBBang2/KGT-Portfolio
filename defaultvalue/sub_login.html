@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | DEFAULT VALUE</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/sub_login.css">
+    <link rel="stylesheet" href="styles/common_resposive.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+</head>
+<body>
+    <?php include("header.php");?>
+    <main>
+        <h1><a href="#"><img src="images/logo.png" alt="쿠팡"></a></h1>
+        <form action="#" method="post" id="loginfrm">
+            <fieldset>
+                <legend class="skip">로그인양식</legend>
+                <ul>
+                    <li>
+                        
+                        <input type="text" name="user_id" placeholder="아이디(이메일)">
+                    </li>
+                    <li class="error id_error">아이디(이메일)을 입력해주세요</li>
+                    <li>
+                        
+                        <input type="password" name="user_pw" placeholder="비밀번호">
+                    </li>
+                    <li class="error pw_error">비밀번호를 입력해주세요</li>
+                </ul>
+                <div class="btm">
+                    <p>
+                        <label>
+                            <input type="checkbox" name="login_y" id="login_y">
+                            <span>자동로그인</span>
+                        </label>
+                    </p>
+                    <a href="#" class="idpw_search">아이디(이메일)/비밀번호 찾기</a>
+                </div>
+                <button type="submit" id="login_btn">로그인</button>
+            </fieldset>
+        </form>
+        <a href="#" id="join_link">회원가입</a>
+        <div class="copy">COPYRIGHT &copy; 2016 DEFAULT ALL RIGHTS RESERVED.</div>
+    </main>
+    <?php include("footer.php");?>
+        <script src="scripts/sub_login.js"></script>
+        <script src="scripts/common.js"></script>
+        <script src="scripts/sub_etc.js"></script>
+</body>
+</html>

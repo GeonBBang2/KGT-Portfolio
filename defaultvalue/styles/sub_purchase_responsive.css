@@ -1,0 +1,122 @@
+@media screen and (max-width:1024px) {
+    #order_wrap {
+        width: calc(100% - 32px);
+    }
+    #order_wrap .left {
+        width: 100%;
+        text-align: center;
+    }
+    #order_wrap .left .right{
+        display: none;
+    }
+    #mobile_order{
+        width: 100%;
+        background-color: #fff;
+        color: #000;
+        height: 60px;
+        border-top: 1px solid #333; margin: 0;
+        padding: 10px;
+        display: flex;
+        position: fixed;
+        bottom: 0;
+    }
+    #mobile_order #mobile_order_btn {
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        background-color: #333;
+        position: relative;
+    }
+    #mobile_order .mo_order_appear {
+        width: 100%;
+        height: 0;
+        position: absolute;
+        bottom: 59px;
+        border-bottom: 1px solid #333;
+        background-color: #f1f1f1;
+        overflow: hidden;
+        transition: all 0.5s;
+        padding: 0 25px;
+    }
+    #mobile_order .mo_order_appear .mo_close_btn {
+        text-align: center;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    #mobile_order .mo_order_appear .mo_close_btn img {transform: rotate(90deg);}
+    #mobile_order .mo_order_appear select{
+        width: 100%;
+        height: 40px;
+        border: 1px solid #333;
+        margin-bottom: 20px;
+    }
+    #mobile_order .mo_order_appear .num_price {
+        display: flex;
+        justify-content: space-between;
+    }
+    #mobile_order .mo_order_appear .number {
+        width: max-content;
+        margin-bottom: 20px;
+    }
+    #mobile_order .mo_order_appear .order_name {
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        color: #000;
+        font-weight: 700;
+    }
+    #mobile_order .mo_order_appear .number .order_number {}
+    #mobile_order .mo_order_appear .number .order_number #num {
+        width: 200px;
+        height: 40px;
+        margin-right: 10px;
+    }
+    #mobile_order .mo_order_appear .number .order_number #order_btn_num {
+        width: 50px;
+        height: 40px;
+        color: #fff;
+        background-color: #000;
+    }
+
+    #mobile_order .mo_order_appear .total_price{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #mobile_order .mo_order_appear .total_price p {font-size: 1rem;}
+    #mobile_order .mo_order_appear .total_price p {}
+    #mobile_order .mo_order_appear .total_price .result_price{margin-left: 20px;}
+    #mobile_order .mo_order_appear .total_price .result_price .result_price_num{
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+
+    #mobile_order #mobile_like_btn {
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+        border-radius: 10px;
+        transition: color 0.3s;
+    }
+    #mobile_order #mobile_like_btn:hover {
+        color: red;
+    }
+    #mobile_order #mobile_like_btn::after {
+        content: '\f004';
+        font-family:"Font Awesome 5 Free";
+        font-size: 1.0rem;
+        font-weight: 600;
+    }
+}
+
+
+#mobile_order #cart_btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+#mobile_order #cart_btn {
+    width: 120px; color: #000; height: 40px;
+    border: 1px solid #333;
+    transition: all 0.3s;
+}
