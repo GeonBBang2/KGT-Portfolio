@@ -263,7 +263,7 @@ const TEItemsData = [
     category: "AEM",
     description: `AEM을 활용한 웹사이트 유지보수 및 콘텐츠 관리`,
     img: "img/portfolio/mercedes-benz_logo.png",
-    stacks: ["AEM_logo"],
+    stacks: ["aem_logo"],
     link: "https://www.mercedes-benz.co.kr/passengercars.html?group=all&subgroup=see-all&view=BODYTYPE&utm_source=google&utm_medium=cpc&utm_campaign=C.B.AO.G_NA_LA_KR_google_sea&utm_content=google_sea_cross_brandkeyword_kw_title_give_n&utm_term=&gad_source=1&gad_campaignid=22175719335&gbraid=0AAAAApKw1KtU0A8NlUV3VZt5U3WTp031I&gclid=CjwKCAiAqKbMBhBmEiwAZ3UboOYNROlt07XC0md2B9v85b4ifwrfy8wXjN3s7Nu4QuHnflhPRK70xhoCnH8QAvD_BwE"
   },
   {
@@ -271,7 +271,7 @@ const TEItemsData = [
     category: "AEM",
     description: `AEM을 활용한 웹사이트 유지보수 및 콘텐츠 관리`,
     img: "img/portfolio/mb-trucks_logo.png",
-    stacks: ["AEM_logo"],
+    stacks: ["aem_logo"],
     link: "https://www.mercedes-benz-trucks.com/kr/ko/home.html"
   },
   {
