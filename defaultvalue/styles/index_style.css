@@ -93,6 +93,7 @@ main #notice_lookbook_wrap .notice .notice_btm a.notice_img {
     height: 260px;
     background-position: center;
     background-size: contain;
+    background-repeat: no-repeat;
     transition:opacity 0.5s;
 }
 main #notice_lookbook_wrap .notice .notice_btm a.notice_img:hover {

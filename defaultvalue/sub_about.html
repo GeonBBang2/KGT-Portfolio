@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,15 +20,16 @@
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/common_resposive.css">
 </head>
+
 <body>
-    <?php include("header.php");?>
+    <defaultvalue-header></defaultvalue-header>
     <main>
         <div class="about_wrap">
             <div class="about_bg">
                 <div class="about_filter"></div>
                 <div class="about_txt">
                     <h1>
-                        About 
+                        About
                     </h1>
                     <p>디폴트벨류(DEFAULT VALUE)는<span>'Normal, Ordinary and Usual'</span>이란</p>
                     <p>슬로건을 바탕으로 남녀노소 누구나 쉽게 접할 수 있는 디자인과</p>
@@ -59,9 +61,11 @@
             </div><!-- adress_bg -->
         </div><!-- about_wrap -->
     </main>
-    <?php include("footer.php");?>
+<defaultvalue-footer></defaultvalue-footer>
     <script src="scripts/jquery-3.6.0.js"></script>
     <script src="scripts/sub_about.js"></script>
-    <script src="scripts/common.js"></script>
+    <script src="scripts/header-component.js"></script>
+    <script src="scripts/footer-component.js"></script>
 </body>
+
 </html>

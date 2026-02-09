@@ -1,0 +1,136 @@
+.footer_wrap {
+    width: 100%;
+    background-color: #333;
+}
+
+footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    color: #d9d9d9;
+    font-family: 'Nanum Gothic';
+    font-size: 0.85rem;
+}
+
+footer a {
+    color: #d9d9d9;
+    font-size: 0.85rem;
+    font-family: 'Nanum Gothic';
+}
+
+footer .f_left {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+footer .f_left img {}
+
+footer .f_left img:first-child {
+    transform: scale(80%);
+    margin-bottom: 40px;
+}
+
+footer .f_left img:last-child {
+    width: 108px;
+}
+
+footer .f_center {}
+
+footer .f_center .f_c_top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+footer .f_center .customer {
+    margin-right: 30px;
+}
+
+footer .f_center .customer a:hover {
+    color: #fff;
+}
+
+footer .f_center .customer a {
+    margin-right: 20px;
+}
+
+footer .f_center .customer a:last-child {
+    margin: 0;
+}
+
+footer .f_center .recruit {}
+
+footer .f_center .recruit a:hover {
+    color: #fff;
+}
+
+footer .f_center .recruit a {
+    margin-right: 10px;
+}
+
+footer .f_center .recruit a:last-child {
+    margin: 0;
+}
+
+footer .f_center p {
+    font-size: 0.85rem;
+    line-height: 1.7;
+    font-family: "Nanum Gothic";
+}
+
+footer .f_right {}
+
+footer .f_right .f_r_t {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+footer .f_right .f_r_t .qrcode {
+    text-align: center;
+    margin-right: 10px;
+}
+
+footer .f_right .f_r_t .qrcode img {}
+
+footer .f_right .f_r_t .qrcode p {
+    margin-top: 5px;
+    font-size: 0.85rem;
+}
+
+footer .f_right .f_r_t .sitemap {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+footer .f_right .f_r_t .sitemap a:first-child {
+    margin-bottom: 10px;
+}
+
+footer .f_right .f_r_t .sitemap a {}
+
+footer .f_right .f_r_t .sitemap a:last-child {
+    font-size: 1rem;
+    color: #e30613;
+}
+
+footer .f_right .f_r_b {}
+
+footer .f_right .f_r_b select {}
+
+footer .f_right .f_r_b select option {}
+
+footer .f_right .f_r_b button {
+    color: #d9d9d9;
+    border: 1px solid #f7f9fc;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+footer .f_right .f_r_b button:hover {
+    background-color: #f7f9fc;
+    color: #333;
+}

@@ -1,0 +1,143 @@
+/* introduce_store_wrap */
+.sns_introduce_bg {
+    background-color: #fff;
+    margin-bottom: 160px;
+}
+
+#introduce_store_wrap {
+    width: 1400px;
+    margin: 120px auto;
+}
+
+#introduce_store_wrap h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+#introduce_store_wrap .introduce_store {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 auto;
+    width: max-content;
+}
+
+#introduce_store_wrap .introduce_store .store_open::after {
+    content: '';
+    display: block;
+    background-color: #d9d9d9;
+    height: 300px;
+    width: 1px;
+    position: absolute;
+    top: 0;
+    right: -80px;
+}
+
+#introduce_store_wrap .introduce_store .store_open {
+    margin-right: 300px;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    margin-top: 100px;
+    position: relative;
+}
+
+#introduce_store_wrap .introduce_store .store_open .sopen_img {}
+
+#introduce_store_wrap .introduce_store .store_open .sopen_img::after {
+    content: '\f1ad';
+    display: block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 100px;
+    color: #1b932a;
+    margin-bottom: 30px;
+}
+
+#introduce_store_wrap .introduce_store h3 {
+    font-size: 1.5rem;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+#introduce_store_wrap .introduce_store p {
+    padding: 10px 0;
+    line-height: 1.7;
+    color: #333;
+}
+
+#introduce_store_wrap .introduce_store a.store_btn {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #333;
+    color: #333;
+    border-radius: 10px;
+    margin: 0 auto;
+    line-height: 50px;
+    transition: all 0.5s;
+    max-width: 250px;
+}
+
+#introduce_store_wrap .introduce_store a.store_btn:hover {
+    color: #fff;
+    background-color: #333;
+}
+
+#introduce_store_wrap .introduce_store .store_find {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#introduce_store_wrap .introduce_store .store_find .sfind_img {}
+
+#introduce_store_wrap .introduce_store .store_find .h3 {}
+
+#introduce_store_wrap .introduce_store .store_find .p {}
+
+#introduce_store_wrap .introduce_store .store_find a.store_btn {
+    margin-top: 28px;
+}
+
+/* 공통 */
+#introduce_store_wrap .introduce_store .sfind_img::after {
+    content: '\f3c5';
+    display: block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 100px;
+    color: #1b932a;
+    margin-bottom: 30px;
+}
+
+/* sns_wrap */
+.sns_wrap {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.sns_wrap .sns_content {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+}
+
+.sns_wrap .sns_content p {}
+
+.sns_wrap .sns_content p span {}
+
+.sns_wrap .sns_content .sns_imgs {}
+
+.sns_wrap .sns_content .sns_imgs a {
+    margin-left: 20px;
+}
+
+.sns_wrap .sns_content .sns_imgs a img {}
+
+.sns_wrap .sns_bg {
+    position: absolute;
+}
+
+.sns_wrap .sns_bg img {}

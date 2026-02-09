@@ -29,7 +29,7 @@ header .mobile_menu .menu1_mobile .menu1_mobile_part {
     font-size: 1.3rem;
 }
 header .mobile_menu .menu1_mobile .menu1_mobile_part:hover {
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #33333330;
 }
 header .mobile_menu .menu2_mobile {}
 header .mobile_menu .menu2_mobile .menu2_mobile_part {
@@ -42,19 +42,21 @@ header .mobile_menu .menu2_mobile .menu2_mobile_part {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     z-index: 901;
     overflow: hidden;
     transition: all 0.5s;
     height: 0;
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #00000040;
+    box-shadow: -1px -2px 12px #00000060;
 }
 #search_slide .search_slide_bg {
     background-color: #fff;
     width: 400px;
     height: 400px;
     padding: 20px;
-    border: 1px solid #999;
-    border-radius: 10px;
 }
 
 #search_slide .search_slide_bg .search_slide_top {}
@@ -160,6 +162,7 @@ header .menu1 a {
     margin-right: 10px;
     font-size: 1.3rem;
     transition: border-bottom 0.5s;
+    transition: color .3s;
 }
 header .menu1 a:last-child {padding: 0;}
 header .menu1 a.active {color: #f00;}
@@ -184,6 +187,10 @@ main::before {
     display: block;
     height: 80px;
     width: 100%;
+}
+
+main .board {
+        min-height: 50vh;
 }
 
 /* footer */

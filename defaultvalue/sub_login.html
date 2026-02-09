@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,8 +13,9 @@
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
 </head>
+
 <body>
-    <?php include("header.php");?>
+    <defaultvalue-header></defaultvalue-header>
     <main>
         <h1><a href="#"><img src="images/logo.png" alt="쿠팡"></a></h1>
         <form action="#" method="post" id="loginfrm">
@@ -21,12 +23,12 @@
                 <legend class="skip">로그인양식</legend>
                 <ul>
                     <li>
-                        
+
                         <input type="text" name="user_id" placeholder="아이디(이메일)">
                     </li>
                     <li class="error id_error">아이디(이메일)을 입력해주세요</li>
                     <li>
-                        
+
                         <input type="password" name="user_pw" placeholder="비밀번호">
                     </li>
                     <li class="error pw_error">비밀번호를 입력해주세요</li>
@@ -46,9 +48,11 @@
         <a href="#" id="join_link">회원가입</a>
         <div class="copy">COPYRIGHT &copy; 2016 DEFAULT ALL RIGHTS RESERVED.</div>
     </main>
-    <?php include("footer.php");?>
-        <script src="scripts/sub_login.js"></script>
-        <script src="scripts/common.js"></script>
-        <script src="scripts/sub_etc.js"></script>
+<defaultvalue-footer></defaultvalue-footer>
+    <script src="scripts/sub_login.js"></script>
+    <script src="scripts/sub_etc.js"></script>
+    <script src="scripts/header-component.js"></script>
+    <script src="scripts/footer-component.js"></script>
 </body>
+
 </html>

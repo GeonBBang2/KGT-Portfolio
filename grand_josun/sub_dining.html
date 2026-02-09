@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,13 +13,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <!-- css -->
     <link rel="stylesheet" href="style/reset.css">
-    <link rel="stylesheet" href="style/common.css">
     <link rel="stylesheet" href="style/sub_header.css">
     <link rel="stylesheet" href="style/sub_dining.css">
 </head>
+
 <body>
     <!-- header -->
-    <?php include("header.php");?>
+    <grandjosun-header></grandjosun-header>
     <main>
         <div class="title">
             <h1>dining</h1>
@@ -50,10 +51,10 @@
                     <p class="sub_title">room</p>
                     <h2><span>d</span>eluxe</h2>
                     <p class="content">야경이 아름다운 시티뷰에서 감각적인 도시의 매력을 만나고 탁 트인 통유리 너머로 펼쳐지는 오션뷰에서 자연이 주는 휴식을 마음껏 즐겨보세요.</p>
-                        <div class="link">
-                            <a href="#" class="detail">자세히보기</a>
-                            <a href="#" class="like" title="관심 상품 담기"></a>
-                        </div>
+                    <div class="link">
+                        <a href="#" class="detail">자세히보기</a>
+                        <a href="#" class="like" title="관심 상품 담기"></a>
+                    </div>
                 </div>
                 <div class="photo"><!-- bg --></div>
             </div><!-- tab_c kids -->
@@ -62,18 +63,21 @@
                     <p class="sub_title">room</p>
                     <h2><span>p</span>remier</h2>
                     <p class="content">프리미어 룸은 일반 객실에서 누릴 수 없는 공간감을 자랑합니다. 편안한 객실에서 여유로운 휴일을 즐겨보세요.</p>
-                        <div class="link">
-                            <a href="#" class="detail">자세히보기</a>
-                            <a href="#" class="like" title="관심 상품 담기"></a>
-                        </div>
+                    <div class="link">
+                        <a href="#" class="detail">자세히보기</a>
+                        <a href="#" class="like" title="관심 상품 담기"></a>
+                    </div>
                 </div>
                 <div class="photo"><!-- bg --></div>
             </div><!-- tab_c suite -->
         </div><!-- tab_contents -->
     </main>
     <!-- footer -->
-    <?php include("footer.php");?>
+    <grandjosun-footer></grandjosun-footer>
     <!-- <script src="script/common.js"></script> -->
     <script src="script/sub.js"></script>
+    <script src="script/header-component.js"></script>
+    <script src="script/footer-component.js"></script>
 </body>
+
 </html>

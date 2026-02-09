@@ -1,0 +1,100 @@
+#product_event_wrap_bg {
+  background-color: #f7f9fc;
+}
+
+#event_wrap {
+  max-width: 1440px;
+  margin: 120px auto;
+}
+
+#event_wrap>h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+#event_wrap .event_more {
+  padding: 36px 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+#event_wrap .event_more .more_event {
+  margin-bottom: 20px;
+}
+
+#event_wrap .event_more .more_event a:hover img {
+  transform: translateX(.5vw);
+}
+
+#event_wrap .event_more .pagenation a:nth-child(3) {
+  display: none;
+}
+
+#event_wrap .event_more .pagenation a:nth-child(1) img {
+  transform: rotate(180deg);
+}
+
+#event_wrap #event_slide_wrap {
+  width: 116%;
+  overflow: hidden;
+}
+
+#event_wrap #event_slide_wrap .event_slide_container {
+  display: flex;
+  transition: all 0.5s;
+}
+
+/* 이벤트 슬라이드 공통 */
+#event_wrap #event_slide_wrap .event_slide_container .slide {
+  margin-right: 50px;
+}
+
+#event_wrap #event_slide_wrap .event_slide_container .slide .slide_content {
+  text-align: center;
+}
+
+#event_wrap #event_slide_wrap .event_slide_container .slide .slide_content:hover .event_img {
+  background-size: 120%;
+}
+
+#event_wrap #event_slide_wrap .event_slide_container .slide .slide_content .event_img {
+  width: 450px;
+  height: 325px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+  transition: all 0.5s ease;
+}
+
+#event_wrap #event_slide_wrap .event_slide_container .slide .slide_content h2 {
+  font-weight: 700;
+  color: #121212;
+}
+
+#event_wrap #event_slide_wrap .event_slide_container .slide .slide_content p {
+  color: #33333395;
+}
+
+#event_wrap #event_slide_wrap .event_slide_container .slide1 .slide_content .event_img {
+  background-image: url(../images/event_card_01.jpg);
+}
+
+#event_wrap #event_slide_wrap .event_slide_container .slide2 .slide_content .event_img {
+  background-image: url(../images/event_card_02.jpg);
+}
+
+#event_wrap #event_slide_wrap .event_slide_container .slide3 .slide_content .event_img {
+  background-image: url(../images/event_card_03.jpg);
+}
+
+#event_wrap #event_slide_wrap .event_slide_container .slide4 .slide_content .event_img {
+  background-image: url(../images/event_card_04.jpg);
+}
+
+#event_wrap #event_slide_wrap .event_slide_container .slide5 .slide_content .event_img {
+  background-image: url(../images/event_card_05.jpg);
+}

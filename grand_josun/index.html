@@ -15,16 +15,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <!-- css를 서브페이지 고려해서 여러개로 작성 -->
     <link rel="stylesheet" href="style/reset.css">
-    <link rel="stylesheet" href="style/common.css">
     <link rel="stylesheet" href="style/index_header.css">
     <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
     <!-- header -->
-    <!-- <?php include("연결파일경로");?> -->
-    <!-- php파일연결으니 html+css+js 완성 후 연결작업 -->
-    <!-- php파일은 웹서버 업로드 후 확인가능 (FTP업로드 후 확인 필수!) -->
-    <?php include("header.php");?>
+    <grandjosun-header></grandjosun-header>
     <main>
         <div id="slide_check_wrap">
             <div id="slide_wrap">
@@ -41,7 +37,7 @@
                     <div class="bar">
                         <dl class="date">
                             <dt>CHECK IN/OUT</dt>
-                            <dd>2022.07.27 수 - 2022.07.28 목</dd>
+                            <dd>2026.01.25 일 - 2026.01.26 월</dd>
                             <dd>1박</dd>
                         </dl>
                         <dl class="number">
@@ -211,13 +207,14 @@
         </div><!-- contact_wrap -->
     </main>
     <!-- footer -->
-    <?php include("footer.php");?>
+    <grandjosun-footer></grandjosun-footer>
     <!-- script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><!-- Jquery 라이브러리 -->
-    <script src="script/common.js"></script>
+    <script src="script/header-component.js"></script>
+    <script src="script/footer-component.js" ></script>
     <script src="script/main.js"></script>
     <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6d647244622a01639e666ccd8ce9ac0b"></script> -->
-    <script>
+<!--     <script>
         var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
         var options = { //지도를 생성할 때 필요한 기본 옵션
             /* 37.49306772,126.72226003 */
@@ -232,6 +229,31 @@
         });
         // 마커가 지도 위에 표시되도록 설정합니다
         marker.setMap(map);
-    </script>
+    </script> -->
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6d647244622a01639e666ccd8ce9ac0b&autoload=false"></script>
+
 </body>
+<script>
+    window.onload = function() {
+        if (typeof kakao !== 'undefined') {
+            kakao.maps.load(function() {
+                var container = document.getElementById('map');
+                var options = {
+                    center: new kakao.maps.LatLng(35.159740, 129.163351),
+                    level: 3
+                };
+                var map = new kakao.maps.Map(container, options);
+                
+                var marker = new kakao.maps.Marker({
+                    position: new kakao.maps.LatLng(35.159740, 129.163351)
+                });
+                marker.setMap(map);
+                
+                setTimeout(function() { map.relayout(); }, 500);
+            });
+        } else {
+            console.error("error");
+        }
+    };
+</script>
 </html>

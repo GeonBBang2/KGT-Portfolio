@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="styles/common_resposive.css">
 </head>
 <body>
-    <?php include("header.php");?>
+    <defaultvalue-header></defaultvalue-header>
     <main>
         <div id="contact_wrap">
                 <h2 style="font-size: 2rem; font-family: 'Kanit';">Contact</h2>
@@ -35,25 +35,34 @@
             </div>
         </div><!-- contact_wrap -->
     </main>
-    <?php include("footer.php");?>
+<defaultvalue-footer></defaultvalue-footer>
     <script src="scripts/jquery-3.6.0.js"></script>
     <script src="scripts/sub_contact.js"></script>
-    <script src="scripts/common.js"></script>
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3db10d59e205765199b9f58cbc4f56ad"></script>
+    <script src="scripts/header-component.js"></script>
+    <script src="scripts/footer-component.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6d647244622a01639e666ccd8ce9ac0b&autoload=false"></script>
     <script>
-        var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
-        var options = { //지도를 생성할 때 필요한 기본 옵션
-            center: new kakao.maps.LatLng(37.5615523,127.0118253), //지도의 중심좌표.
-            level: 3 //지도의 레벨(확대, 축소 정도)
-        };
-        var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
-        var markerPosition  = new kakao.maps.LatLng(37.5615523,127.0118253); 
-        // 마커를 생성합니다
-        var marker = new kakao.maps.Marker({
-            position: markerPosition
-        });
-        // 마커가 지도 위에 표시되도록 설정합니다
-        marker.setMap(map);
+    window.onload = function() {
+        if (typeof kakao !== 'undefined') {
+            kakao.maps.load(function() {
+                var container = document.getElementById('map');
+                var options = {
+                    center: new kakao.maps.LatLng(37.5615523,127.0118253),
+                    level: 3
+                };
+                var map = new kakao.maps.Map(container, options);
+                
+                var marker = new kakao.maps.Marker({
+                    position: new kakao.maps.LatLng(37.5615523,127.0118253)
+                });
+                marker.setMap(map);
+                
+                setTimeout(function() { map.relayout(); }, 500);
+            });
+        } else {
+            console.error("error");
+        }
+    };
     </script>
 </body>
 </html>

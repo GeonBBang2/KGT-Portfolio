@@ -135,7 +135,7 @@ main #category_products .products .products_btm .product .p_img {
     height: 264px;
     background-size: cover;
     background-position: center;
-    transition: background-image 1s;
+    transition: background-image .5s;
     margin-bottom: 15px;
 }
 main #category_products .products .products_btm .product:hover .p_img {

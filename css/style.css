@@ -1,10 +1,14 @@
+* {
+box-sizing:border-box;
+}
+
 body, html {
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Pretendard Variable", Pretendard, Roboto, "Helvetica Neue", "Noto Sans KR", sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #666;
 	width: 100% !important;
-	height: 100% !important;
+	/* height: 100% !important; */
 }
 h1 {
 	font-weight: 700;
@@ -89,7 +93,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4da8', end
 }
 /* Navigation */
 #nav {
-	z-index: 9999;
+	z-index: 99;
 }
 #nav.affix {
 	position: fixed;
@@ -163,6 +167,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4da8', end
 	font-size: 15px;
 	border-radius: 0;
 	text-transform: uppercase;
+	transition: all .3s;
+	line-height: normal;
 }
 .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
 	color: #fff;
@@ -178,11 +184,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4da8', end
 	text-transform: uppercase;
 	font-size: 15px;
 	font-weight: 400;
+	line-height: normal;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active {
 	color: #fff;
 	background-color: #526cbb;
 	border-color: #526cbb;
+	transition: all .3s;
 }
 .btn-primary i.fa {
 	margin-right: 10px;
@@ -198,7 +206,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	outline-offset: none;
 }
 /* Home Section */
-.intro {
+/* .intro {
 	display: table;
 	width: 100%;
 	height: auto;
@@ -209,7 +217,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
-}
+} */
 .intro .overlay {
 	padding: 100px 0;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b4da8+0,4977c2+100&0.85+0,0.85+100 */
@@ -221,33 +229,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d96b4da8', e
 .section-title.center {
 	padding: 25px 0 45px 0;
 }
-/* About Section */
-#about {
-	padding: 100px 0;
-	background: #f6f6f6;
-}
-#about .about-text {
-	height: 267px;
-	margin-left: 10px;
-}
-#about img {
-	float: right;
-}
-#about p {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	line-height: 2;
-}
-#about p:nth-child(2) {
-	line-height: 1.7;
-}
-#about p:nth-child(3) {
-	font-weight: 700;
-	color: #000;
-}
-#about p:first-child {
-	margin-top: 0;
-}
+
 #about .btn {}
 /* Skills Section */
 #skills {
@@ -319,17 +301,18 @@ ol.type li {
 ol.type li a {
 	display: inline-block;
 	background: transparent;
-	border: 2px solid #526cbb;
-	color: #526cbb;
+	border: 2px solid #fff;
+	color: #fff;
 	padding: 10px 20px;
+	transition: all .3s;
 }
 ol.type li a.active {
-	background: #526cbb;
-	color: #fff;
+	background: #fff;
+	color: #526cbb;
 }
 ol.type li a:hover {
-	background: #526cbb;
-	color: #fff;
+	background: #fff;
+	color: #526cbb;
 }
 .isotope-item {
 	z-index: 2
@@ -362,7 +345,7 @@ ol.type li a:hover {
 	-moz-transition-property: -moz-transform, opacity;
 	transition-property: transform, opacity;
 }
-.portfolio-item {
+.portfolioItem {
 	margin: 15px 0;
 	-webkit-transition: all 0.5s ease-out;
 	-moz-transition: all 0.5s ease-out;
@@ -370,25 +353,27 @@ ol.type li a:hover {
 	-o-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
 }
-.portfolio-item:hover {
+/* .portfolioItem:hover {
 	-webkit-transform: scale(1.1);
 	-moz-transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	-o-transform: scale(1.1);
 	transform: scale(1.1);
-}
-.portfolio-item .hover-bg {
-	height: 260px;
-	overflow: hidden;
-	position: relative;
+} */
+.portfolioItem .hover-bg {
+	height: -webkit-fill-available;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 .hover-bg .hover-text {
 	position: absolute;
 	text-align: center;
 	margin: 0 auto;
 	color: #ffffff;
-	background: rgba(0, 0, 0, 0.66);
-	padding: 33% 0 0 0;
+	background: rgba(0, 0, 0, 0.7);
+	/* padding: 33% 0 0 0; */
 	height: 100%;
 	width: 100%;
 	opacity: 0;
@@ -428,29 +413,7 @@ ol.type li a:hover {
 	padding: 5px;
 	color: #E87E04;
 }
-.links {
-	width: 100%;
-	display: flex;
-	justify-content: space-around;
 
-}
-.link_btn:hover {
-	background-color: #526cbb;
-	color: #fff;
-}
-.link_btn {
-	width: 45%; height: 35px;
-	margin: 10px;
-	border-radius: 10px;
-	border: 1px solid #526cbb;
-	background-color: #fff;
-	color: #526cbb;
-	transition:all 0.5s;
-	text-align: center;
-	line-height: 35px;
-	font-size: 1.25rem;
-	text-transform: uppercase;
-}
 .design_btn {
 	display: none;
 }
@@ -655,10 +618,7 @@ header .intro-text {
 }
 
 @media (max-width: 1024px) {
-#about img {
-	float: left;
-	margin-bottom: 20px;
-}
+#about img {}
 }
 @media (max-width: 540px) {
 	ol.type li:nth-child(1) a,

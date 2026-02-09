@@ -20,10 +20,12 @@
   <!-- Stylesheet
     ================================================== -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/extraStyle.css">
   <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
-  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
-  <script type="text/javascript" src="js/modernizr.custom.js"></script>
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,7 +46,7 @@
             <div class="intro-text">
               <h1>김건태</h1>
               <p>Web Publisher & Designer</p>
-              <a href="#about" class="btn btn-default btn-lg page-scroll">Learn More</a>
+              <a href="#customAbout" class="btn btn-default btn-lg page-scroll">Learn More</a>
             </div>
           </div>
         </div>
@@ -66,36 +68,39 @@
             <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
             <li class="hidden"> <a href="#page-top"></a> </li>
             <li> <a class="page-scroll" href="#page-top">Home</a> </li>
-            <li> <a class="page-scroll" href="#about">About</a> </li>
+            <li> <a class="page-scroll" href="#customAbout">About</a> </li>
             <li> <a class="page-scroll" href="#skills">Skills</a> </li>
             <li> <a class="page-scroll" href="#portfolio">Portfolio</a> </li>
             <!-- <li> <a class="page-scroll" href="#testimonials">Testimonials</a> </li> -->
-            <li> <a class="page-scroll" href="#contact">Contact</a> </li>
+            <!-- <li> <a class="page-scroll" href="#contact">Contact</a> </li> -->
+            <li> <a class="page-scroll" href="#technicalExperience">Technical Experience</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </div>
   <!-- About Section -->
-  <div id="about">
-    <div class="container">
+  <div id="customAbout">
+    <div class="customCon">
       <div class="section-title text-center center">
         <h2>About Me</h2>
         <hr>
       </div>
-      <div class="row">
-        <div class="col-xs-12 col-md-6"> <img src="img/about.jpg" class="img-responsive" alt=""> </div>
-        <div class="col-xs-12 col-md-6">
+      <div class="customRow">
+        <div> <img src="img/resumeImg_edited.jpg" class="img-responsive" alt=""> </div>
+        <div>
           <div class="about-text">
 
             16.04 | 컴퓨터그래픽스운용기능사 취득 <br>
             20.02 | 한국폴리텍대학 인천캠퍼스 산업디자인과 졸업 <br>
             22.09 | UI/UX 반응형 웹디자인&웹퍼블리셔 NCS 과정 수료<br>
             22.09 | 웹디자인기능사 취득<br>
-            23.07 | GTQ그래픽기술자격 1급</p>
-            <p>AVAILABLE TOOL : Figma, Photoshop, Illustrator, HTML, CSS <br> JavaScript, PHP include, Shopify Liquid, WordPress</p>
+            23.07 | GTQ그래픽기술자격 1급<br>
+            22.09 ~ 25.03 | 네오엠씨 근무
+            <p>AVAILABLE TOOL : Figma, Photoshop, Illustrator, HTML, CSS <br> JavaScript, PHP include, Shopify Liquid,
+              WordPress</p>
             <p style="font-weight:600; color:#000;">"밥값 하는 사람이 되겠습니다."</p>
-            <a href="img/resume.pdf" class="btn btn-primary btn-lg page-scroll" target="_blank">RESUME</a>
+            <a href="/portfolio_ver2/img/portfolio/resume.pdf" class="btn btn-primary btn-lg page-scroll" target="_blank">RESUME</a>
           </div>
         </div>
       </div>
@@ -116,7 +121,7 @@
         </span>
         <h4>CSS3</h4>
       </div>
-      <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="90"> <span class="percent">80</span>
+      <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="85"> <span class="percent">80</span>
         </span>
         <h4>JavaScript</h4>
       </div>
@@ -138,383 +143,411 @@
       </div>
     </div>
   </div>
-  <!-- Portfolio Section -->
+
+  <!-- portfolio -->
   <div id="portfolio">
-    <div class="container">
+    <div class="portfolioContainer">
       <div class="section-title text-center center">
         <h2>Portfolio</h2>
         <hr>
       </div>
+      <div href="#" class="portfolioStartBtn"><span class="startBtn">Play</span></div>
+
+      <!-- playPortFolio -->
+      <div class="playPortFolio">
+        <h3 class="portfolioTitle">KGT's Portfolio</h3>
+        <!-- closeBtn -->
+        <div class="closeBtnWrapper">
+          <div class="closeCircleIcon"></div>
+        </div>
+        <button class="PFItemsPrevBtn"></button>
+        <button class="PFItemsNextBtn"></button>
+        <!-- closeBtn -->
+        <div class="portfolioItemContainer">
+          <!-- portfolioItem Section -->
+
+          <!-- 디테일 페이지1 1 -->
+          <div class="portfolioItem">
+            <div class="hover-bg"> <a href="img/portfolio/detailed_page_01.jpg" title="상세페이지 디자인" rel="prettyPhoto">
+                <div class="hover-text">
+                  <h4>Detailed Page</h4>
+                  <small>Desgin</small>
+                </div>
+                <img src="img/portfolio/detailed_page_01.jpg" class="img-responsive" alt="Detailed Page">
+              </a> </div>
+          </div>
+          <!-- //디테일 페이지1 1 -->
+          <!-- 배너 2 -->
+          <div class="portfolioItem">
+            <div class="hover-bg" style="background-color: #e9e9e9;"> <a href="img/portfolio/bnr.jpg" title="배너 디자인"
+                rel="prettyPhoto">
+                <div class="hover-text">
+                  <h4>Banner</h4>
+                  <small>Desgin</small>
+                </div>
+                <img src="img/portfolio/bnr.jpg" class="img-responsive" alt="Banner Design">
+              </a> </div>
+          </div>
+          <!-- //배너 2 -->
+          <!-- 디테일 페이지2 3 -->
+          <div class="portfolioItem">
+            <div class="hover-bg"> <a href="img/portfolio/detailed_page_02.jpg" title="상세페이지 디자인" rel="prettyPhoto">
+                <div class="hover-text">
+                  <h4>Detailed Page</h4>
+                  <small>Desgin</small>
+                </div>
+                <img src="img/portfolio/detailed_page_02.jpg" class="img-responsive" alt="Detailed Design">
+              </a> </div>
+          </div>
+          <!-- //디테일 페이지2 3 -->
+          <!-- 세븐일레븐 4 -->
+          <div class="portfolioItem">
+            <div class="hover-bg"> <a href="7_eleven/index.html" title="main" rel="stylesheet" target="_blank">
+                <div class="hover-text">
+                  <h4>Seven Eleven</h4>
+                  <small>Web Redesign</small>
+                </div>
+                <img src="img/portfolio/7_eleven.png" class="img-responsive" alt="7_eleven Korea">
+              </a> </div>
+            <div class="links">
+              <a href="https://www.figma.com/file/fVJc6gIQPuqS3DllsXpeoU/korea_seven?node-id=0%3A1" class="link_btn"
+                target="_blank">Wireframes</a>
+              <a href="7_eleven/index.html" class="link_btn" target="_blank">Web Prototype</a>
+            </div>
+          </div>
+          <!-- //세븐일레븐 4 -->
+          <!-- 그랜드조선 5 -->
+          <div class="portfolioItem">
+            <div class="hover-bg"> <a href="grand_josun/index.html" title="main + sub" rel="stylesheet" target="_blank">
+                <div class="hover-text">
+                  <h4>Grand Josun</h4>
+                  <small>Clone Coding</small>
+                </div>
+                <img src="img/portfolio/grand_josun.png" class="img-responsive" alt="Grand Josun">
+              </a> </div>
+            <div class="links">
+              <a href="https://www.figma.com/file/9ZEyYt6NWJDcMklXcsfpoy/0727-%EA%B7%B8%EB%9E%9C%EB%93%9C%EC%A1%B0%EC%84%A0%EB%B6%80%EC%82%B0?node-id=0%3A1"
+                class="link_btn" target="_blank">Wireframes</a>
+              <a href="grand_josun/index.html" class="link_btn" target="_blank">Web Prototype</a>
+            </div>
+          </div>
+          <!-- //그랜드조선 5 -->
+          <!-- 디폴트벨류 6 -->
+          <div class="portfolioItem">
+            <div class="hover-bg"> <a href="defaultvalue/index.html" title="
+                      반응형웹 + 크로스브라우징 main+sub(소개/제품)" rel="stylesheet" target="_blank">
+                <div class="hover-text">
+                  <h4>Defaultvalue</h4>
+                  <small>Web Redesign</small>
+                </div>
+                <img src="img/portfolio/defaultvalue_mockup.jpg" class="img-responsive" alt="Defaultvalue">
+              </a>
+            </div>
+            <div class="links">
+              <a href="https://www.figma.com/file/GgAcDeGiDvUY1IHKlkNhwF/Defaultvalue_wireframe?node-id=0%3A1"
+                class="link_btn" target="_blank">Wireframes</a>
+              <a href="defaultvalue/index.html" class="link_btn" target="_blank">Web Prototype</a>
+            </div>
+          </div>
+          <!-- //디폴트벨류 6 -->
+          <!-- 카스 7 -->
+          <div class="portfolioItem">
+            <div class="hover-bg"> <a href="cass/index.html" title="반응형웹 + 크로스브라우징 main" rel="stylesheet"
+                target="_blank">
+                <div class="hover-text">
+                  <h4>CASS Brandsite</h4>
+                  <small>Web Redesign</small>
+                </div>
+                <img src="img/portfolio/cass_mockup.jpg" class="img-responsive" alt="CASS Brandsite">
+              </a></div>
+            <div class="links">
+              <a href="https://www.figma.com/file/wGGKHrvoUoEjQ1WXmhbalD/cass_wireframe?node-id=0%3A1" class="link_btn"
+                target="_blank">Wireframes</a>
+              <a href="cass/index.html" class="link_btn" target="_blank">Web Prototype</a>
+            </div>
+          </div>
+          <!-- //카스 7 -->
+          <!-- 카히스토리 8 -->
+          <div class="portfolioItem">
+            <div class="hover-bg"> <a href="project_carhistory/index.html" title="반응형웹 + 크로스브라우징" rel="stylesheet"
+                target="_blank">
+                <div class="hover-text">
+                  <h4>Carhistory</h4>
+                  <small>Clone Coding</small>
+                </div>
+                <img src="img/portfolio/car_history.png" class="img-responsive" alt="Carhistory">
+              </a> </div>
+            <div class="links">
+              <a href="https://www.figma.com/file/5ckhJUODIbditVmm67oTia/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B80629_%EC%B9%B4%ED%9E%88%EC%8A%A4%ED%86%A0%EB%A6%AC?node-id=0%3A1"
+                class="link_btn" target="_blank">Wireframes</a>
+              <a href="project_carhistory/index.html" class="link_btn" target="_blank">Web Prototype</a>
+            </div>
+          </div>
+          <!-- //카히스토리 8 -->
+          <!-- 캣치 9 -->
+          <div class="portfolioItem">
+            <div class="hover-bg"> <a href="responsive_cat_project/index.html" title="반응형웹 + 크로스브라우징" rel="stylesheet"
+                target="_blank">
+                <div class="hover-text">
+                  <h4>Catch</h4>
+                  <small>Clone Coding</small>
+                </div>
+                <img src="img/portfolio/responsive_cat_project.png" class="img-responsive" alt="Catch">
+              </a> </div>
+            <div class="links">
+              <a href="https://www.figma.com/file/Hggr9pQ5i5HZ7SsvamMzXh/%EB%B0%98%EC%9D%91%ED%98%95%EC%9B%B9-%EA%B3%A0%EC%96%91%EC%9D%B4%EB%B3%B4%ED%98%B8%EC%86%8C?node-id=0%3A1"
+                class="link_btn" target="_blank">Wireframes</a>
+              <a href="responsive_cat_project/index.html" class="link_btn" target="_blank">Web Prototype</a>
+            </div>
+          </div>
+          <!-- //캣치 9 -->
+          <!-- 서울시청 10 -->
+          <div class="portfolioItem">
+            <div class="hover-bg"> <a href="web_seoul/index.html" title="웹" rel="stylesheet" target="_blank">
+                <div class="hover-text">
+                  <h4>
+                    Seoul City Hall</h4>
+                  <small>Clone coding</small>
+                </div>
+                <img src="img/portfolio/web_seoul.png" class="img-responsive" alt="
+                        Seoul City Hall">
+              </a> </div>
+            <div class="links">
+              <a href="https://www.figma.com/file/0M9w8sbVDVnJhDohTVq9J/%EC%84%9C%EC%9A%B8%EC%8B%9C%EC%B2%AD?node-id=0%3A1"
+                class="link_btn" target="_blank">Wireframes</a>
+              <a href="web_seoul/index.html" class="link_btn" target="_blank">Web Prototype</a>
+            </div>
+          </div>
+          <!-- //서울시청 10 -->
+          <!-- 코스메틱 포스터1 11 -->
+          <div class="portfolioItem">
+            <div class="hover-bg"> <a href="img/portfolio/poster_02.jpg" title="화장품 포스터" rel="prettyPhoto">
+                <div class="hover-text">
+                  <h4>Cosmetic poster</h4>
+                  <small>Design</small>
+                </div>
+                <img src="img/portfolio/poster_02.jpg" class="img-responsive" alt="Cosmetic poster">
+              </a> </div>
+          </div>
+          <!-- //코스메틱 포스터1 11 -->
+          <!-- SNS AD 12 -->
+          <div class="portfolioItem">
+            <div class="hover-bg"> <a href="img/portfolio/sns.jpg" title="SNS 광고 디자인" rel="prettyPhoto">
+                <div class="hover-text">
+                  <h4>SNS AD</h4>
+                  <small>Design</small>
+                </div>
+                <img src="img/portfolio/sns.jpg" class="img-responsive" alt="SNS AD Design">
+              </a> </div>
+          </div>
+          <!-- //SNS AD 12 -->
+          <!-- 코스메틱 포스터2 13 -->
+          <div class="portfolioItem">
+            <div class="hover-bg"> <a href="img/portfolio/poster_01.jpg" title="화장품 포스터 디자인" rel="prettyPhoto">
+                <div class="hover-text">
+                  <h4>Cosmetic Poster</h4>
+                  <small>Desgin</small>
+                </div>
+                <img src="img/portfolio/poster_01.jpg" class="img-responsive" alt="Cosmetic Poster">
+              </a> </div>
+          </div>
+          <!-- //코스메틱 포스터2 13 -->
+          <!-- //portfolioItem Section -->
+        </div><!-- //portfolioItemContainer -->
+        <!-- viewBtnCon -->
+        <div class="viewBtnCon">
+          <a href="#" class="previewOne btn-primary">Wireframes</a>
+          <a href="#" class="previewTwo btn-primary">Web Prototype</a>
+        </div>
+        <!-- //viewBtnCon -->
+      </div><!-- //playPortFolio -->
+    </div><!-- //portfolioContainer -->
+  </div><!-- //portfolio -->
+
+  <!-- technicalExperience -->
+  <div id="technicalExperience" class="text-center">
+    <div class="container">
+      <div class="section-title center">
+        <h2>Technical Experience</h2>
+        <hr>
+      </div>
+
+
       <div class="categories">
         <ul class="cat">
           <li>
             <ol class="type">
               <li><a href="#" data-filter="*" class="active">All</a></li>
-              <li><a href="#" data-filter=".web">Web Redesign</a></li>
-              <li><a href="#" data-filter=".cloneCoding">Clone Coding</a></li>
-              <li><a href="#" data-filter=".branding">Design</a></li>
+              <li><a href="#" data-filter="WordPress">WordPress</a></li>
+              <li><a href="#" data-filter="AEM">AEM</a></li>
+              <li><a href="#" data-filter="Freshdesk">Freshdesk</a></li>
             </ol>
           </li>
         </ul>
         <div class="clearfix"></div>
       </div>
-      <div class="row">
-        <div class="portfolio-items">
-          <div class="col-sm-6 col-md-3 col-lg-3 web">
-            <div class="portfolio-item">
-              <div class="hover-bg"> <a href="7_eleven/index.html" title="main" rel="stylesheet" target="_blank">
-                  <div class="hover-text" style="padding: 40% 0 0 0;">
-                    <h4>공사중입니다.</h4>
-                    <small></small>
-                  </div>
-                  <img src="img/portfolio/7_eleven.png" class="img-responsive" alt="7_eleven Korea"
-                    style="padding-top: 70px;">
-                </a> </div>
-              <div class="links">
-                <a href="https://www.figma.com/file/fVJc6gIQPuqS3DllsXpeoU/korea_seven?node-id=0%3A1" class="link_btn"
-                  target="_blank">Wireframes</a>
-                <a href="7_eleven/index.html" class="link_btn" target="_blank">Web Prototype</a>
+
+      <div class="TEItemWrap">
+        <div class="TEItem" data-filter="WordPress">
+          <div class="hover-bg">
+            <div href="img/portfolio/kohyoung_logo.png" title="고영테크놀러지 사내 eLearning">
+              <div class="hover-text">
+                <h4>고영테크놀러지 사내 eLearning</h4>
+                <small>WordPress</small>
               </div>
+              <img src="img/portfolio/kohyoung_logo.png" class="img-responsive" alt="고영테크놀러지 사내 eLearning">
             </div>
-          </div><!-- 세븐일레븐 -->
-          <div class="col-sm-6 col-md-3 col-lg-3 web">
-            <div class="portfolio-item">
-              <div class="hover-bg"> <a href="defaultvalue/index.html" title="
-              반응형웹 + 크로스브라우징 main+sub(소개/제품)" rel="stylesheet" target="_blank">
-                  <div class="hover-text">
-                    <h4>Defaultvalue</h4>
-                    <small>Web Redesign</small>
-                  </div>
-                  <img src="img/portfolio/defaultvalue_mockup.jpg" class="img-responsive" alt="Defaultvalue"
-                    style="padding-top: 60px;">
-                </a>
+          </div><!-- hover-bg -->
+        </div><!-- TEItem -->
+
+        <div class="TEItem" data-filter="WordPress">
+          <div class="hover-bg">
+            <div href="img/portfolio/mantruckbus_logo.png" title="만트럭버스코리아">
+              <div class="hover-text">
+                <h4>만트럭버스코리아</h4>
+                <small>WordPress</small>
               </div>
-              <div class="links">
-                <a href="https://www.figma.com/file/GgAcDeGiDvUY1IHKlkNhwF/Defaultvalue_wireframe?node-id=0%3A1"
-                  class="link_btn" target="_blank">Wireframes</a>
-                <a href="defaultvalue/index.html" class="link_btn" target="_blank">Web Prototype</a>
-              </div>
+              <img src="img/portfolio/mantruckbus_logo.png" class="img-responsive" alt="만트럭버스코리아">
             </div>
-          </div><!-- 디폴트벨류 -->
-          <div class="col-sm-6 col-md-3 col-lg-3 cloneCoding">
-            <div class="portfolio-item">
-              <div class="hover-bg"> <a href="grand_josun/index.html" title="main + sub" rel="stylesheet"
-                  target="_blank">
-                  <div class="hover-text">
-                    <h4>Grand Josun</h4>
-                    <small>Clone Coding</small>
-                  </div>
-                  <img src="img/portfolio/grand_josun.png" class="img-responsive" alt="Grand Josun"
-                    style="padding-top: 70px;">
-                </a> </div>
-              <div class="links">
-                <a href="https://www.figma.com/file/9ZEyYt6NWJDcMklXcsfpoy/0727-%EA%B7%B8%EB%9E%9C%EB%93%9C%EC%A1%B0%EC%84%A0%EB%B6%80%EC%82%B0?node-id=0%3A1"
-                  class="link_btn" target="_blank">Wireframes</a>
-                <a href="grand_josun/index.html" class="link_btn" target="_blank">Web Prototype</a>
+          </div><!-- hover-bg -->
+        </div><!-- TEItem -->
+
+        <div class="TEItem" data-filter="WordPress">
+          <div class="hover-bg">
+            <div href="img/portfolio/gh_logo.png" title="좋은습관">
+              <div class="hover-text">
+                <h4>좋은습관</h4>
+                <small>WordPress</small>
               </div>
+              <img src="img/portfolio/gh_logo.png" class="img-responsive" alt="좋은습관">
             </div>
-          </div><!-- 그랜드조선 -->
-          <div class="col-sm-6 col-md-3 col-lg-3 web">
-            <div class="portfolio-item">
-              <div class="hover-bg"> <a href="cass/index.html" title="반응형웹 + 크로스브라우징 main" rel="stylesheet"
-                  target="_blank">
-                  <div class="hover-text">
-                    <h4>CASS Brandsite</h4>
-                    <small>Web Redesign</small>
-                  </div>
-                  <img src="img/portfolio/cass_mockup.jpg" class="img-responsive" alt="CASS Brandsite"
-                    style="padding-top: 60px;">
-                </a></div>
-              <div class="links">
-                <a href="https://www.figma.com/file/wGGKHrvoUoEjQ1WXmhbalD/cass_wireframe?node-id=0%3A1"
-                  class="link_btn" target="_blank">Wireframes</a>
-                <a href="cass/index.html" class="link_btn" target="_blank">Web Prototype</a>
+          </div><!-- hover-bg -->
+        </div><!-- TEItem -->
+
+        <div class="TEItem" data-filter="WordPress">
+          <div class="hover-bg">
+            <div href="img/portfolio/mbfsk_logo_bgedited.png" title="메르세데스-벤츠 파이낸셜 서비스 코리아">
+              <div class="hover-text">
+                <h4>메르세데스-벤츠 <br> 파이낸셜 서비스 코리아</h4>
+                <small>WordPress</small>
               </div>
+              <img src="img/portfolio/mbfsk_logo_bgedited.png" class="img-responsive" alt="메르세데스-벤츠 파이낸셜 서비스 코리아">
             </div>
-          </div><!-- 카스 -->
-          <div class="col-sm-6 col-md-3 col-lg-3 cloneCoding">
-            <div class="portfolio-item">
-              <div class="hover-bg"> <a href="project_carhistory/index.html" title="반응형웹 + 크로스브라우징" rel="stylesheet"
-                  target="_blank">
-                  <div class="hover-text">
-                    <h4>Carhistory</h4>
-                    <small>Clone Coding</small>
-                  </div>
-                  <img src="img/portfolio/car_history.png" class="img-responsive" alt="Carhistory"
-                    style="padding-top: 70px;">
-                </a> </div>
-              <div class="links">
-                <a href="https://www.figma.com/file/5ckhJUODIbditVmm67oTia/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B80629_%EC%B9%B4%ED%9E%88%EC%8A%A4%ED%86%A0%EB%A6%AC?node-id=0%3A1"
-                  class="link_btn" target="_blank">Wireframes</a>
-                <a href="project_carhistory/index.html" class="link_btn" target="_blank">Web Prototype</a>
+          </div><!-- hover-bg -->
+        </div><!-- TEItem -->
+
+        <div class="TEItem" data-filter="WordPress">
+          <div class="hover-bg">
+            <div href="img/portfolio/shinhan-open_logo.png" title="신한동해오픈">
+              <div class="hover-text">
+                <h4>신한동해오픈</h4>
+                <small>WordPress</small>
               </div>
+              <img src="img/portfolio/shinhan-open_logo.png" class="img-responsive" alt="신한동해오픈">
             </div>
-          </div><!-- 카히스토리 -->
-          <div class="col-sm-6 col-md-3 col-lg-3 cloneCoding">
-            <div class="portfolio-item">
-              <div class="hover-bg"> <a href="responsive_cat_project/index.html" title="반응형웹 + 크로스브라우징" rel="stylesheet"
-                  target="_blank">
-                  <div class="hover-text">
-                    <h4>Catch</h4>
-                    <small>Clone Coding</small>
-                  </div>
-                  <img src="img/portfolio/responsive_cat_project.png" class="img-responsive" alt="Catch"
-                    style="padding-top: 70px;">
-                </a> </div>
-              <div class="links">
-                <a href="https://www.figma.com/file/Hggr9pQ5i5HZ7SsvamMzXh/%EB%B0%98%EC%9D%91%ED%98%95%EC%9B%B9-%EA%B3%A0%EC%96%91%EC%9D%B4%EB%B3%B4%ED%98%B8%EC%86%8C?node-id=0%3A1"
-                  class="link_btn" target="_blank">Wireframes</a>
-                <a href="responsive_cat_project/index.html" class="link_btn" target="_blank">Web Prototype</a>
+          </div><!-- hover-bg -->
+        </div><!-- TEItem -->
+
+        <div class="TEItem" data-filter="WordPress">
+          <div class="hover-bg">
+            <div href="img/portfolio/sjcore_logo.png" title="검진라인">
+              <div class="hover-text">
+                <h4>검진라인</h4>
+                <small>WordPress</small>
               </div>
+              <img src="img/portfolio/sjcore_logo.png" class="img-responsive" alt="검진라인">
             </div>
-          </div><!-- 캣치 -->
-          <div class="col-sm-6 col-md-3 col-lg-3 cloneCoding">
-            <div class="portfolio-item">
-              <div class="hover-bg"> <a href="web_seoul/index.html" title="웹" rel="stylesheet" target="_blank">
-                  <div class="hover-text">
-                    <h4>
-                      Seoul City Hall</h4>
-                    <small>Clone coding</small>
-                  </div>
-                  <img src="img/portfolio/web_seoul.png" class="img-responsive" alt="
-                Seoul City Hall" style="padding-top: 70px;">
-                </a> </div>
-              <div class="links">
-                <a href="https://www.figma.com/file/0M9w8sbVDVnJhDoh7TVq9J/%EC%84%9C%EC%9A%B8%EC%8B%9C%EC%B2%AD?node-id=0%3A1"
-                  class="link_btn" target="_blank">Wireframes</a>
-                <a href="web_seoul/index.html" class="link_btn" target="_blank">Web Prototype</a>
+          </div><!-- hover-bg -->
+        </div><!-- TEItem -->
+
+        <div class="TEItem" data-filter="AEM">
+          <div class="hover-bg">
+            <div href="img/portfolio/mercedes-benz_logo.png" title="메르세데스-벤츠 코리아">
+              <div class="hover-text">
+                <h4>메르세데스-벤츠 코리아</h4>
+                <small>AEM</small>
               </div>
+              <img src="img/portfolio/mercedes-benz_logo.png" class="img-responsive" alt="메르세데스-벤츠 코리아">
             </div>
-          </div><!-- 서울시청 -->
-          <div class="col-sm-6 col-md-3 col-lg-3 branding">
-            <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/poster_02.jpg" title="화장품 포스터" rel="prettyPhoto">
-                  <div class="hover-text">
-                    <h4>Cosmetic poster</h4>
-                    <small>Design</small>
-                  </div>
-                  <img src="img/portfolio/poster_02.jpg" class="img-responsive" alt="Cosmetic poster">
-                </a> </div>
-              <div class="links">
-                <a href="img/portfolio/poster_02.jpg" class="link_btn" style="visibility: hidden;"
-                  target="_blank">jpg</a>
-                <a href="img/portfolio/cosmatic_poster_02.pdf" class="link_btn" style="visibility: hidden;"
-                  target="_blank">pdf</a>
+          </div><!-- hover-bg -->
+        </div><!-- TEItem -->
+
+        <div class="TEItem" data-filter="AEM">
+          <div class="hover-bg">
+            <div href="img/portfolio/mb-trucks_logo.png" title="메르세데스-벤츠 트럭">
+              <div class="hover-text">
+                <h4>메르세데스-벤츠 트럭</h4>
+                <small>AEM</small>
               </div>
+              <img src="img/portfolio/mb-trucks_logo.png" class="img-responsive" alt="메르세데스-벤츠 트럭">
             </div>
-          </div>
-          <div class="col-sm-6 col-md-3 col-lg-3 branding">
-            <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/sns.jpg" title="SNS 광고 디자인" rel="prettyPhoto">
-                  <div class="hover-text">
-                    <h4>SNS AD</h4>
-                    <small>Design</small>
-                  </div>
-                  <img src="img/portfolio/sns.jpg" class="img-responsive" alt="SNS AD Design">
-                </a> </div>
-              <div class="links">
-                <a href="img/portfolio/sns.jpg" class="link_btn" style="visibility: hidden;" target="_blank">jpg</a>
-                <a href="img/portfolio/sns_ad.pdf" class="link_btn" style="visibility: hidden;" target="_blank">pdf</a>
+          </div><!-- hover-bg -->
+        </div><!-- TEItem -->
+
+        <div class="TEItem" data-filter="Freshdesk">
+          <div class="hover-bg">
+            <div href="img/portfolio/sk-cnc_logo.png" title="SK C&C 헬프데스크">
+              <div class="hover-text">
+                <h4>SK C&C 헬프데스크</h4>
+                <small>Freshdesk</small>
               </div>
+              <img src="img/portfolio/sk-cnc_logo.png" class="img-responsive" alt="SK C&C 헬프데스크">
             </div>
-          </div>
-          <div class="col-sm-6 col-md-3 col-lg-3 branding">
-            <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/poster_01.jpg" title="화장품 포스터 디자인" rel="prettyPhoto">
-                  <div class="hover-text">
-                    <h4>Cosmetic Poster</h4>
-                    <small>Desgin</small>
-                  </div>
-                  <img src="img/portfolio/poster_01.jpg" class="img-responsive" alt="Cosmetic Poster">
-                </a> </div>
-              <div class="links">
-                <a href="img/portfolio/poster_01.jpg" class="link_btn" style="visibility: hidden;"
-                  target="_blank">jpg</a>
-                <a href="img/portfolio/cosmatic_poster_01.pdf" class="link_btn" style="visibility: hidden;"
-                  target="_blank">pdf</a>
+          </div><!-- hover-bg -->
+        </div><!-- TEItem -->
+
+        <div class="TEItem" data-filter="Freshdesk">
+          <div class="hover-bg">
+            <div href="img/portfolio/kohyoung_logo.png" title="고영테크놀러지 헬프데스크">
+              <div class="hover-text">
+                <h4>고영테크놀러지 헬프데스크</h4>
+                <small>Freshdesk</small>
               </div>
+              <img src="img/portfolio/kohyoung_logo.png" class="img-responsive" alt="고영테크놀러지 헬프데스크">
             </div>
-          </div><!-- Cosmetic Poster -->
-          <div class="col-sm-6 col-md-3 col-lg-3 branding">
-            <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/detailed_page_01.jpg" title="상세페이지 디자인" rel="prettyPhoto">
-                  <div class="hover-text">
-                    <h4>Detailed Page</h4>
-                    <small>Desgin</small>
-                  </div>
-                  <img src="img/portfolio/detailed_page_01.jpg" class="img-responsive" alt="Detailed Page">
-                </a> </div>
-              <div class="links">
-                <a href="img/portfolio/detailed_page_01.jpg" class="link_btn" style="visibility: hidden;"
-                  target="_blank">jpg</a>
-                <a href="img/portfolio/detailed_page_01.pdf" class="link_btn" style="visibility: hidden;"
-                  target="_blank">pdf</a>
+          </div><!-- hover-bg -->
+        </div><!-- TEItem -->
+
+        <div class="TEItemDescWrap"><!-- TEItemDescWrap -->
+          <div class="TEItemDesc">
+            <div class="TEItemDescTop">
+              <img src="" alt="">
+              <div class="TEItemDescCloseBtn">
+                <svg width="14" height="14" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="0.353553" y1="0.3536" x2="10.9602" y2="10.9602" stroke="#999"></line>
+                  <line x1="10.9601" y1="0.353553" x2="0.353518" y2="10.9602" stroke="#999"></line>
+                </svg>
               </div>
+
             </div>
-            <!--  style="transform: translateY(55px);" -->
-          </div>
-          <div class="col-sm-6 col-md-3 col-lg-3 branding">
-            <div class="portfolio-item">
-              <div class="hover-bg" style="background-color: #e9e9e9;"> <a href="img/portfolio/bnr.jpg" title="배너 디자인"
-                  rel="prettyPhoto">
-                  <div class="hover-text">
-                    <h4>Banner</h4>
-                    <small>Desgin</small>
-                  </div>
-                  <img src="img/portfolio/bnr.jpg" class="img-responsive" alt="Banner Design"
-                    style="padding-top: 30px;">
-                </a> </div>
-              <div class="links">
-                <a href="img/portfolio/bnr.jpg" class="link_btn" style="visibility: hidden;" target="_blank">jpg</a>
-                <a href="img/portfolio/banner_design.pdf" class="link_btn" style="visibility: hidden;"
-                  target="_blank">pdf</a>
-              </div>
+            <div class="TEItemDescCon">
+              <h4 class="TEItemDescConTitle"></h4>
+              <p class="TEItemDescConText">
             </div>
-          </div>
-          <div class="col-sm-6 col-md-3 col-lg-3 branding">
-            <div class="portfolio-item">
-              <div class="hover-bg"> <a href="img/portfolio/detailed_page_02.jpg" title="상세페이지 디자인" rel="prettyPhoto">
-                  <div class="hover-text">
-                    <h4>Detailed Page</h4>
-                    <small>Desgin</small>
-                  </div>
-                  <img src="img/portfolio/detailed_page_02.jpg" class="img-responsive" alt="Detailed Design">
-                </a> </div>
-              <div class="links">
-                <a href="img/portfolio/detailed_page_02.jpg" class="link_btn" style="visibility: hidden;"
-                  target="_blank">jpg</a>
-                <a href="img/portfolio/detailed_page_02.pdf" class="link_btn" style="visibility: hidden;"
-                  target="_blank">pdf</a>
-              </div>
+            <div class="TEItemDescStacks">
+              <h4 class="TEItemDescStacksTittle">Stack</h4>
+              <div class="TEItemDescStackList"><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src=""
+                  alt=""><img src="" alt=""></div>
             </div>
-          </div>
-        </div>
+            <div class="TEItemDescBtns">
+              <a href="" class="TEItemDescLinks" style="display: none;"></a>
+              <button class="TEItemDescCloseBtn">Close</button>
+            </div>
+          </div><!-- TEItemDesc -->
+        </div><!-- TEItemDescWrap -->
+        <div id="TEBG"></div>
       </div>
     </div>
   </div>
-  <!-- Achievements Section -->
-  <!-- <div id="achievements" class="text-center">
-  <div class="container">
-    <div class="section-title center">
-      <h2>Some Stats</h2>
-      <hr>
-    </div>
-    <div class="row">
-      <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="200ms">
-        <div class="achievement-box"> <span class="count">310</span>
-          <h4>Happy Clients</h4>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="400ms">
-        <div class="achievement-box"> <span class="count">4700</span>
-          <h4>Hours of Work</h4>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="600ms">
-        <div class="achievement-box"> <span class="count">30</span>
-          <h4>Awards Won</h4>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="800ms">
-        <div class="achievement-box"> <span class="count">8</span>
-          <h4>Years of Experience</h4>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
-  <!-- Testimonials Section -->
-  <!-- <div id="testimonials" class="text-center">
-  <div class="container">
-    <div class="section-title center">
-      <h2>Testimonials</h2>
-      <hr>
-    </div>
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <div class="row testimonials">
-          <div class="col-sm-4">
-            <blockquote><i class="fa fa-quote-left"></i>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitduis sed dapibus leo nec ornare.</p>
-              <div class="clients-name">
-                <p><strong>John Doe</strong><br>
-                  <em>CEO, Company Inc.</em></p>
-              </div>
-            </blockquote>
-          </div>
-          <div class="col-sm-4">
-            <blockquote><i class="fa fa-quote-left"></i>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitduis sed dapibus leo nec ornare.</p>
-              <div class="clients-name">
-                <p><strong>Jane Doe</strong><br>
-                  <em>CEO, Company Inc.</em></p>
-              </div>
-            </blockquote>
-          </div>
-          <div class="col-sm-4">
-            <blockquote><i class="fa fa-quote-left"></i>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitduis sed dapibus leo nec ornare.</p>
-              <div class="clients-name">
-                <p><strong>Chris Smith</strong><br>
-                  <em>CEO, Company Inc.</em></p>
-              </div>
-            </blockquote>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
-  <!-- Contact Section -->
-  <div id="contact" class="text-center">
-    <div class="overlay">
-      <div class="container">
-        <div class="section-title center">
-          <h2>Get In Touch</h2>
-          <hr>
-        </div>
-        <div class="col-md-8 col-md-offset-2">
-          <form name="sentMessage" id="contactForm" novalidate>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="text" id="name" class="form-control" placeholder="Name" required="required">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="email" id="email" class="form-control" placeholder="Email" required="required">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message"
-                required></textarea>
-              <p class="help-block text-danger"></p>
-            </div>
-            <div id="success"></div>
-            <button type="submit" class="btn btn-default">Send Message</button>
-          </form>
-          <!-- <div class="social">
-          <ul>
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-            <li><a href="#"><i class="fa fa-github"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          </ul> -->
-        </div>
-      </div>
-    </div>
+
+
+
   </div>
   </div>
   <div id="footer">
     <div class="container text-center">
       <div class="fnav">
-        <p>Copyright &copy; 2025 GeonTae Kim all rights reserved.</p>
+        <p>Copyright &copy; 2026 GeonTae Kim all rights reserved.</p>
       </div>
     </div>
   </div>
@@ -528,6 +561,7 @@
   <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
   <script type="text/javascript" src="js/contact_me.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/extraCustom.js"></script>
 </body>
 
 </html>

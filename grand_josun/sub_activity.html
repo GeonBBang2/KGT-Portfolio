@@ -12,13 +12,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <!-- css -->
     <link rel="stylesheet" href="style/reset.css">
-    <link rel="stylesheet" href="style/common.css">
     <link rel="stylesheet" href="style/sub_header.css">
     <link rel="stylesheet" href="style/sub_activity.css">
 </head>
 <body>
     <!-- header -->
-    <?php include("header.php");?>
+    <grandjosun-header></grandjosun-header>
     <main>
         <div class="title">
             <h1><span>a</span>ctivity</h1>
@@ -50,17 +49,16 @@
                 <div class="photo"></div> -->
                 <div class="nodata">
                     <p class="text">등록된 액티비티 상품이 없습니다.</p>
-                    <p class="board">
-                        <iframe src="http://muad0823.dothome.co.kr/gnuboard/bbs/board.php?bo_table=test" frameborder="0"
-                        style="width: 100%; height: 400px;"></iframe>
-                    </p>
                 </div>
             </div><!-- tab_c -->
         </div><!-- tab_contents -->
     </main>
     <!-- footer -->
-    <?php include("footer.php");?>
+    <grandjosun-footer></grandjosun-footer>
     <!-- <script src="script/common.js"></script> -->
     <!-- <script src="script/sub_activity.js"></script> -->
+
+    <script src="script/header-component.js"></script>
+    <script src="script/footer-component.js" ></script>
 </body>
 </html>
