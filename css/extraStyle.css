@@ -698,6 +698,11 @@
   .PFItemsNextBtn::after {
     height: 1px;
   }
+
+  #technicalExperience .TEItemWrap .TEItem {
+    width: calc(99% / 2);
+    padding: 12px;
+  }
 }
 
 /* -------------------------------@media (max-width: 480px)------------------------------- */
