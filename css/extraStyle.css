@@ -38,7 +38,7 @@
 #customAbout .customRow {
   display: flex;
   justify-content: center;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 #customAbout .about-text {
@@ -703,6 +703,15 @@
     width: calc(99% / 2);
     padding: 12px;
   }
+
+  #customAbout .customRow {
+        flex-flow: column;
+    align-items: center;
+  }
+  #customAbout .about-text {
+    text-align: center;
+  }
+
 }
 
 /* -------------------------------@media (max-width: 480px)------------------------------- */
