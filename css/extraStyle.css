@@ -712,6 +712,17 @@
     text-align: center;
   }
 
+  #technicalExperience .TEItemDescWrap .TEItemDesc .TEItemDescCon .TEItemDescConText {
+    text-wrap: wrap;
+    font-size: 14px;
+  }
+  #technicalExperience .TEItemDescWrap {
+    min-width: none;
+  }
+  .portfolioContainer .viewBtnCon {
+    bottom: 10vw;
+  }
+
 }
 
 /* -------------------------------@media (max-width: 480px)------------------------------- */
@@ -752,6 +763,10 @@
 
   .PFItemsPrevBtn {
     left: 5.5vw;
+  }
+
+    .portfolioContainer .viewBtnCon {
+    bottom: 20vw;
   }
 }
 
