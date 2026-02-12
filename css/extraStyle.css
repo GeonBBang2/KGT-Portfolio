@@ -599,7 +599,31 @@
 
 /* -------------------------------//technicalExperience------------------------------- */
 
+/* -------------------------------getInTouch------------------------------- */
 
+  #getInTouch {
+    padding: 100px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  #getInTouch .mailto {
+    font-size: 32px;
+    transition: all .3s;
+    border: 2px solid #333;
+    border-radius: 99%;
+    aspect-ratio: 1 / 1;
+    width: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #getInTouch .mailto:hover {
+    border-color: #526cbb;
+  }
+
+  
+/* -------------------------------//getInTouch------------------------------- */
 
 
 /* -------------------------------반응형 UI------------------------------- */
